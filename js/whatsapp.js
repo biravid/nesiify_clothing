@@ -15,7 +15,7 @@ const WhatsAppService = {
   getCleanNumber() {
     const raw = (typeof SITE_CONFIG !== 'undefined' && SITE_CONFIG.whatsappNumber) 
       ? SITE_CONFIG.whatsappNumber 
-      : "91XXXXXXXXXX";
+      : "918300947503";
     return raw.replace(/[^0-9]/g, '');
   },
 
