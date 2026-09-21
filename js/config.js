@@ -29,12 +29,12 @@ const SITE_CONFIG = {
 
   // Primary WhatsApp Business Contact (Placeholder until real phone is provided)
   // Format: country code + 10-digit number without spaces or symbols (e.g., "919876543210")
-  whatsappNumber: "91XXXXXXXXXX",
+  whatsappNumber: "918300947503",
 
   // Social & Web Links
   instagramUrl: "https://instagram.com/nesiify_clothing",
   email: "contact@nesiifyclothing.com",
-  
+
   // Operational Details
   businessHours: "Mon - Sat: 10:00 AM - 7:00 PM IST",
   shippingLocation: "Pan-India Shipping",
