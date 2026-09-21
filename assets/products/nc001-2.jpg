@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="600" height="750">
+  <defs>
+    <linearGradient id="grad_nc001-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF6EB"/>
+      <stop offset="100%" stop-color="#F0EDE4"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="750" fill="url(#grad_nc001-2)"/>
+  <rect x="25" y="25" width="550" height="700" fill="none" stroke="#E2DCCF" stroke-width="1.5" opacity="0.8"/>
+  
+  <circle cx="300" cy="280" r="120" fill="#616438" opacity="0.06"/>
+  
+  <!-- Subtle icon representing kids item -->
+  <g transform="translate(300, 270)" stroke="#1E2015" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M -35 -40 L 35 -40 L 45 40 L -45 40 Z" fill="#FAF6EB" fill-opacity="0.9"/>
+    <path d="M -15 -40 C -8 -26 8 -26 15 -40"/>
+    <path d="M -8 0 C 0 10 8 10 10 0" stroke="#616438" stroke-width="2"/>
+    <circle cx="-4" cy="-8" r="2" fill="#616438" stroke="none"/>
+    <circle cx="8" cy="-8" r="2" fill="#616438" stroke="none"/>
+  </g>
+  
+  <g transform="translate(300, 480)" text-anchor="middle">
+    <rect x="-90" y="-32" width="180" height="26" rx="13" fill="#616438" fill-opacity="0.1"/>
+    <text x="0" y="-15" font-family="'Manrope', sans-serif" font-size="11" font-weight="700" fill="#616438" letter-spacing="2">T-SHIRTS • NC001</text>
+    <text x="0" y="24" font-family="'Manrope', sans-serif" font-size="22" font-weight="700" fill="#1E2015" letter-spacing="0.5">Kids Cotton T-Shirt</text>
+    <text x="0" y="54" font-family="'Manrope', sans-serif" font-size="13" font-weight="600" fill="#65675E" letter-spacing="1.5">DETAIL ANGLE • AGE 4-6Y</text>
+    <text x="0" y="82" font-family="'Manrope', sans-serif" font-size="12" font-weight="500" fill="#8E9086" letter-spacing="1">Soft Ribbed Crew Neck</text>
+  </g>
+</svg>

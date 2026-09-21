@@ -1,0 +1,178 @@
+[
+  {
+    "id": "NC001",
+    "name": "Kids Cotton Everyday T-Shirt",
+    "price": 499,
+    "category": "T-Shirts",
+    "ageRange": "4-6 years",
+    "images": [
+      "assets/products/nc001-1.jpg",
+      "assets/products/nc001-2.jpg"
+    ],
+    "sizes": ["2-4Y", "4-6Y", "6-8Y"],
+    "colors": ["Sage Olive", "Warm Cream", "Sky Blue"],
+    "description": "Soft and breathable cotton t-shirt designed for everyday wear, easy movement, and active play. (Development sample product).",
+    "details": [
+      "Soft breathable cotton jersey fabric",
+      "Ribbed crew neck that retains shape",
+      "Comfortable relaxed fit for easy play",
+      "Machine wash cold, tumble dry low"
+    ],
+    "isNew": true,
+    "isSample": true
+  },
+  {
+    "id": "NC002",
+    "name": "Soft Cotton Printed Pyjamas",
+    "price": 599,
+    "category": "Pyjamas",
+    "ageRange": "2-4 years",
+    "images": [
+      "assets/products/nc002-1.jpg",
+      "assets/products/nc002-2.jpg"
+    ],
+    "sizes": ["2-4Y", "4-6Y"],
+    "colors": ["Warm Beige Stripe", "Dusty Olive"],
+    "description": "All-day comfort pyjamas crafted from gentle, skin-friendly cotton with a soft elastic waistband. (Development sample product).",
+    "details": [
+      "100% gentle combed cotton for sensitive skin",
+      "Soft stretch elastic waistband with no pinch",
+      "Ribbed ankle cuffs for snug cozy fit",
+      "Easy wash and colorfast fabric"
+    ],
+    "isNew": true,
+    "isSample": true
+  },
+  {
+    "id": "NC003",
+    "name": "Playtime Drawstring Shorts",
+    "price": 449,
+    "category": "Shorts",
+    "ageRange": "6-8 years",
+    "images": [
+      "assets/products/nc003-1.jpg",
+      "assets/products/nc003-2.jpg"
+    ],
+    "sizes": ["4-6Y", "6-8Y", "8-10Y"],
+    "colors": ["Olive Green", "Charcoal", "Sand Tan"],
+    "description": "Practical and comfortable cotton shorts with an adjustable drawstring waistband and side pockets. (Development sample product).",
+    "details": [
+      "Durable lightweight cotton twill blend",
+      "Functional drawstring with reinforced eyelets",
+      "Deep side pockets for little treasures",
+      "Double-stitched seams for rough-and-tumble play"
+    ],
+    "isNew": false,
+    "isSample": true
+  },
+  {
+    "id": "NC004",
+    "name": "Daily Comfort Co-ord Set",
+    "price": 899,
+    "category": "Sets",
+    "ageRange": "4-6 years",
+    "images": [
+      "assets/products/nc004-1.jpg",
+      "assets/products/nc004-2.jpg"
+    ],
+    "sizes": ["2-4Y", "4-6Y", "6-8Y"],
+    "colors": ["Terracotta", "Forest Green", "Soft Ochre"],
+    "description": "Matching two-piece set featuring a relaxed-fit crew tee and comfortable pull-on shorts. (Development sample product).",
+    "details": [
+      "Two-piece matching top and bottom set",
+      "Breathable pure cotton for warm days",
+      "Non-binding elastic waistband on shorts",
+      "Pre-shrunk fabric to prevent shrinking"
+    ],
+    "isNew": true,
+    "isSample": true
+  },
+  {
+    "id": "NC005",
+    "name": "Striped Round-Neck Tee",
+    "price": 499,
+    "category": "T-Shirts",
+    "ageRange": "8-10 years",
+    "images": [
+      "assets/products/nc005-1.jpg",
+      "assets/products/nc005-2.jpg"
+    ],
+    "sizes": ["6-8Y", "8-10Y", "10-12Y"],
+    "colors": ["Navy / Cream Stripe", "Olive / White Stripe"],
+    "description": "Classic yarn-dyed striped t-shirt made with soft cotton yarn for a smooth touch against delicate skin. (Development sample product).",
+    "details": [
+      "Yarn-dyed cotton stripes that stay bright",
+      "Drop-shoulder silhouette for relaxed movement",
+      "Tagless neck print for itch-free comfort",
+      "Machine washable"
+    ],
+    "isNew": true,
+    "isSample": true
+  },
+  {
+    "id": "NC006",
+    "name": "All-Day Relaxed Pyjamas",
+    "price": 649,
+    "category": "Pyjamas",
+    "ageRange": "4-6 years",
+    "images": [
+      "assets/products/nc006-1.jpg",
+      "assets/products/nc006-2.jpg"
+    ],
+    "sizes": ["2-4Y", "4-6Y", "6-8Y"],
+    "colors": ["Sage Green", "Warm Grey"],
+    "description": "Lightweight and relaxed pyjamas designed for sleeping, lounging, and everyday indoor comfort. (Development sample product).",
+    "details": [
+      "Ultra-soft cotton slub knit",
+      "Comfortable wide-leg fit for airflow",
+      "Covered elastic waist that stays gentle",
+      "Retains softness after every wash"
+    ],
+    "isNew": false,
+    "isSample": true
+  },
+  {
+    "id": "NC007",
+    "name": "Breathable Cotton Shorts",
+    "price": 429,
+    "category": "Shorts",
+    "ageRange": "2-4 years",
+    "images": [
+      "assets/products/nc007-1.jpg",
+      "assets/products/nc007-2.jpg"
+    ],
+    "sizes": ["2-4Y", "4-6Y"],
+    "colors": ["Khaki", "Sky Blue", "Rust"],
+    "description": "Everyday pull-on shorts with a relaxed leg opening, designed for toddlers and young kids on the move. (Development sample product).",
+    "details": [
+      "100% natural cotton canvas weave",
+      "Stretchy waistband for quick independent dressing",
+      "Soft washed finish for instant comfort",
+      "Colorfast and durable"
+    ],
+    "isNew": false,
+    "isSample": true
+  },
+  {
+    "id": "NC008",
+    "name": "Everyday Summer Lounge Set",
+    "price": 949,
+    "category": "Sets",
+    "ageRange": "10-12 years",
+    "images": [
+      "assets/products/nc008-1.jpg",
+      "assets/products/nc008-2.jpg"
+    ],
+    "sizes": ["8-10Y", "10-12Y"],
+    "colors": ["Olive Ochre", "Charcoal Mist"],
+    "description": "Coordinated tee and casual shorts set tailored in breathable cotton slub for older kids. (Development sample product).",
+    "details": [
+      "Premium textured cotton slub fabric",
+      "Modern clean cuts with minimal branding",
+      "Deep pockets and drawstring adjustment",
+      "Gentle machine wash"
+    ],
+    "isNew": true,
+    "isSample": true
+  }
+]

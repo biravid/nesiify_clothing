@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <linearGradient id="igrad_4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF6EB"/>
+      <stop offset="100%" stop-color="#EFEAE0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#igrad_4)"/>
+  <circle cx="300" cy="230" r="90" fill="#FFFDF9" opacity="0.8"/>
+  
+  <!-- Instagram camera icon glyph -->
+  <g transform="translate(300, 230) scale(2.2)" stroke="#1E2015" stroke-width="1.5" fill="none">
+    <rect x="-14" y="-14" width="28" height="28" rx="7"/>
+    <circle cx="0" cy="0" r="6"/>
+    <circle cx="7" cy="-7" r="1.5" fill="#616438" stroke="none"/>
+  </g>
+  
+  <g transform="translate(300, 400)" text-anchor="middle">
+    <text x="0" y="0" font-family="'Manrope', sans-serif" font-size="18" font-weight="700" fill="#1E2015">@nesiify_clothing</text>
+    <text x="0" y="32" font-family="'Manrope', sans-serif" font-size="14" font-weight="500" fill="#65675E">Easy co-ord sets ready for daily moments</text>
+    <text x="0" y="60" font-family="'Manrope', sans-serif" font-size="13" font-weight="700" fill="#616438">#littleonescomfort</text>
+  </g>
+</svg>

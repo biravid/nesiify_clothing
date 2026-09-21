@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#FAF6EB"/>
+  <!-- Nesiify signature smile and playful dot eyes mark -->
+  <g fill="none" stroke="#616438" stroke-width="3" stroke-linecap="round">
+    <path d="M 18 42 C 26 50 38 50 46 42"/>
+    <circle cx="26" cy="24" r="2.5" fill="#616438" stroke="none"/>
+    <circle cx="38" cy="24" r="2.5" fill="#616438" stroke="none"/>
+    <!-- Cute eyelash / smile twinkle -->
+    <path d="M 23 19 L 26 21" stroke-width="1.8"/>
+    <path d="M 41 19 L 38 21" stroke-width="1.8"/>
+  </g>
+</svg>

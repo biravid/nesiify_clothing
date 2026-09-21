@@ -1,0 +1,78 @@
+/* ===================================================
+   DESIGN TOKENS & SYSTEM VARIABLES
+   =================================================== */
+
+:root {
+  /* Color Palette - Nesiify Clothing Brand Guidelines */
+  --color-primary-dark: #1E2015;
+  --color-brand-olive: #616438;
+  --color-brand-olive-dark: #4B4E26;
+  --color-bg-main: #FFFDF9;
+  --color-bg-secondary: #FAF6EB;
+  --color-accent: #616438;
+  --color-accent-hover: #4B4E26;
+  --color-text-main: #1E2015;
+  --color-text-secondary: #65675E;
+  --color-border: #E8E3D7;
+  --color-white: #FFFFFF;
+  --color-whatsapp: #25D366;
+  --color-whatsapp-dark: #1EBE5D;
+  --color-error: #D9534F;
+  --color-error-bg: #FDF2F2;
+
+  /* Typography */
+  --font-primary: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Font Sizes */
+  --font-size-xs: 12px;
+  --font-size-sm: 13px;
+  --font-size-base: 15px;
+  --font-size-md: 17px;
+  --font-size-lg: 20px;
+  --font-size-xl: 26px;
+  --font-size-2xl: 34px;
+  --font-size-3xl: 44px;
+  --font-size-4xl: 56px;
+
+  /* Font Weights */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* Spacing */
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-pad: 20px;
+  --header-height: 72px;
+  --announcement-height: 38px;
+  --bottom-nav-height: 64px;
+
+  /* Component Radiuses - Clean minimal 4-6px */
+  --radius-xs: 3px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-pill: 9999px;
+
+  /* Aspect Ratios */
+  --product-aspect-ratio: 4 / 5;
+
+  /* Transitions */
+  --transition-fast: 0.18s ease;
+  --transition-smooth: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Elevation */
+  --shadow-subtle: 0 4px 16px rgba(17, 17, 17, 0.04);
+  --shadow-card: 0 8px 24px rgba(17, 17, 17, 0.06);
+  --shadow-float: 0 12px 32px rgba(17, 17, 17, 0.12);
+}

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="600" height="750">
+  <defs>
+    <linearGradient id="grad_sets" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBECE4"/>
+      <stop offset="100%" stop-color="#FAF7F2"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="750" fill="url(#grad_sets)"/>
+  <rect x="30" y="30" width="540" height="690" fill="none" stroke="#E2DCCF" stroke-width="1.5" opacity="0.8"/>
+  
+  <!-- Subtle organic background shape -->
+  <circle cx="300" cy="300" r="140" fill="#616438" opacity="0.06"/>
+  <circle cx="300" cy="300" r="110" fill="none" stroke="#616438" stroke-width="1.2" stroke-dasharray="5 5" opacity="0.3"/>
+  
+  <!-- Kids Co-Ord Set Line Icon: Tee + Shorts combo -->
+  <g transform="translate(300, 290)" stroke="#1E2015" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Top Tee -->
+    <path d="M -36 -75 C -18 -62 18 -62 36 -75 L 75 -42 L 56 -8 L 36 -20 L 36 0 L -36 0 L -36 -20 L -56 -8 L -75 -42 Z" fill="#FAF6EB" fill-opacity="0.85"/>
+    <path d="M -16 -68 C -8 -54 8 -54 16 -68"/>
+    
+    <!-- Matching Bottom Shorts -->
+    <path d="M -34 12 L 34 12 L 40 68 L 8 68 L 0 38 L -8 68 L -40 68 Z" fill="#FAF6EB" fill-opacity="0.85"/>
+    <line x1="-34" y1="22" x2="34" y2="22" stroke="#616438" stroke-width="2" stroke-dasharray="3 3"/>
+    
+    <!-- Smile symbol -->
+    <path d="M -8 -30 C 0 -22 8 -22 10 -30" stroke="#616438" stroke-width="2"/>
+    <circle cx="-5" cy="-38" r="2" fill="#616438" stroke="none"/>
+    <circle cx="7" cy="-38" r="2" fill="#616438" stroke="none"/>
+  </g>
+
+  <g transform="translate(300, 480)" text-anchor="middle">
+    <text x="0" y="0" font-family="'Manrope', sans-serif" font-size="30" font-weight="700" fill="#1E2015" letter-spacing="1">Sets</text>
+    <text x="0" y="34" font-family="'Manrope', sans-serif" font-size="13" font-weight="600" fill="#65675E" letter-spacing="2">MATCHING CO-ORDS &bull; EASY DRESSING</text>
+    <text x="0" y="70" font-family="'Manrope', sans-serif" font-size="12" font-weight="700" fill="#616438" letter-spacing="2.5">SHOP SETS &rarr;</text>
+  </g>
+</svg>

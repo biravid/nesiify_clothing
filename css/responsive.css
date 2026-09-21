@@ -1,0 +1,240 @@
+/* ===================================================
+   RESPONSIVE STYLES & MOBILE-FIRST BREAKPOINTS
+   =================================================== */
+
+/* Tablet & Smaller Desktops (Max 1024px) */
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-sm);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: var(--space-xl);
+  }
+
+  .footer-col-brand {
+    grid-column: 1 / -1;
+    padding-right: 0;
+  }
+
+  .hero-grid {
+    gap: var(--space-xl);
+  }
+
+  .featured-editorial-grid {
+    gap: var(--space-2xl);
+  }
+}
+
+/* Tablet (Max 768px) */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 62px;
+  }
+
+  /* Desktop nav hidden, hamburger active */
+  .nav-links,
+  .nav-wa-btn {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  /* Fixed Mobile Bottom Bar */
+  .bottom-nav-bar {
+    display: block;
+  }
+
+  /* Add padding to body for bottom nav bar */
+  body {
+    padding-bottom: var(--bottom-nav-height);
+  }
+
+  /* Adjust floating WA so it doesn't overlap bottom bar */
+  .floating-whatsapp {
+    bottom: calc(var(--bottom-nav-height) + 16px);
+    right: 16px;
+    width: 48px;
+    height: 48px;
+  }
+
+  /* Hero Mobile */
+  .hero-section {
+    padding: var(--space-xl) 0 var(--space-2xl) 0;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .hero-image-wrapper img {
+    height: 380px;
+  }
+
+  .hero-badge-overlay {
+    bottom: 16px;
+    left: 16px;
+    padding: 8px 12px;
+  }
+
+  /* Featured Editorial Mobile */
+  .featured-editorial-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .featured-image-container img {
+    height: 340px;
+  }
+
+  /* Benefits Mobile: 2x2 grid */
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
+  }
+
+  /* Instagram Mobile: 3 columns */
+  .instagram-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  /* WhatsApp CTA Mobile */
+  .whatsapp-cta-box {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-xl) var(--space-md);
+  }
+
+  .whatsapp-cta-box .btn {
+    width: 100%;
+  }
+
+  /* Product Detail Mobile: Single Column */
+  .product-detail-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .product-gallery {
+    position: static;
+  }
+
+  .gallery-main-image {
+    margin-bottom: var(--space-sm);
+  }
+
+  /* Footer Mobile */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl) var(--space-md);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-xs);
+    text-align: center;
+  }
+}
+
+/* Mobile Phones (Max 600px - 430px, 390px, 375px, 320px) */
+@media (max-width: 600px) {
+  /* 2-Column Product Grid strictly required for mobile */
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .product-card-info {
+    padding: 10px;
+  }
+
+  .product-card-name {
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+
+  .product-card-price {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .product-card-action .btn {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+
+  /* Category Grid: 2 columns on small phones */
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .instagram-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .section {
+    padding-top: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+  }
+}
+
+/* Very Small Mobile Phones (Max 360px - e.g. 320px screens) */
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .product-card-info {
+    padding: 8px;
+  }
+
+  .product-card-name {
+    font-size: 12px;
+  }
+
+  .product-card-price {
+    font-size: 13px;
+  }
+}

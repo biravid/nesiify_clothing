@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="600" height="750">
+  <defs>
+    <linearGradient id="grad_pyjamas" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EFEFEA"/>
+      <stop offset="100%" stop-color="#FAF8F5"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="750" fill="url(#grad_pyjamas)"/>
+  <rect x="30" y="30" width="540" height="690" fill="none" stroke="#E2DCCF" stroke-width="1.5" opacity="0.8"/>
+  
+  <!-- Subtle organic background shape -->
+  <circle cx="300" cy="300" r="140" fill="#616438" opacity="0.06"/>
+  <circle cx="300" cy="300" r="110" fill="none" stroke="#616438" stroke-width="1.2" stroke-dasharray="5 5" opacity="0.3"/>
+  
+  <!-- Kids Pyjamas Line Icon -->
+  <g transform="translate(300, 290)" stroke="#1E2015" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Pyjama pants silhouette -->
+    <path d="M -42 -75 L 42 -75 L 36 75 L 6 75 L 0 -15 L -6 75 L -36 75 Z" fill="#FAF6EB" fill-opacity="0.85"/>
+    <!-- Waistband elastic stitch -->
+    <line x1="-42" y1="-62" x2="42" y2="-62" stroke="#616438" stroke-width="2.5" stroke-dasharray="4 3"/>
+    <!-- Cute drawstring ties -->
+    <path d="M -4 -62 Q -12 -45 -18 -38" stroke="#616438" stroke-width="2"/>
+    <path d="M 4 -62 Q 12 -45 18 -38" stroke="#616438" stroke-width="2"/>
+    <!-- Ankle cuffs -->
+    <line x1="-36" y1="62" x2="-6" y2="62" stroke="#616438" stroke-width="2"/>
+    <line x1="6" y1="62" x2="36" y2="62" stroke="#616438" stroke-width="2"/>
+  </g>
+
+  <g transform="translate(300, 480)" text-anchor="middle">
+    <text x="0" y="0" font-family="'Manrope', sans-serif" font-size="30" font-weight="700" fill="#1E2015" letter-spacing="1">Pyjamas</text>
+    <text x="0" y="34" font-family="'Manrope', sans-serif" font-size="13" font-weight="600" fill="#65675E" letter-spacing="2">ALL-DAY COMFORT &bull; RELAXED FIT</text>
+    <text x="0" y="70" font-family="'Manrope', sans-serif" font-size="12" font-weight="700" fill="#616438" letter-spacing="2.5">SHOP PYJAMAS &rarr;</text>
+  </g>
+</svg>

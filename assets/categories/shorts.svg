@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="600" height="750">
+  <defs>
+    <linearGradient id="grad_shorts" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ECEBE3"/>
+      <stop offset="100%" stop-color="#FAF7F2"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="750" fill="url(#grad_shorts)"/>
+  <rect x="30" y="30" width="540" height="690" fill="none" stroke="#E2DCCF" stroke-width="1.5" opacity="0.8"/>
+  
+  <!-- Subtle organic background shape -->
+  <circle cx="300" cy="300" r="140" fill="#616438" opacity="0.06"/>
+  <circle cx="300" cy="300" r="110" fill="none" stroke="#616438" stroke-width="1.2" stroke-dasharray="5 5" opacity="0.3"/>
+  
+  <!-- Kids Shorts Line Icon -->
+  <g transform="translate(300, 290)" stroke="#1E2015" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Shorts silhouette -->
+    <path d="M -45 -50 L 45 -50 L 52 28 L 10 28 L 0 -10 L -10 28 L -52 28 Z" fill="#FAF6EB" fill-opacity="0.85"/>
+    <!-- Waistband -->
+    <line x1="-45" y1="-38" x2="45" y2="-38" stroke="#616438" stroke-width="2.5" stroke-dasharray="4 3"/>
+    <!-- Drawstrings -->
+    <circle cx="0" cy="-38" r="3" fill="#616438" stroke="none"/>
+    <path d="M -3 -36 Q -10 -22 -14 -16" stroke="#616438" stroke-width="2"/>
+    <path d="M 3 -36 Q 10 -22 14 -16" stroke="#616438" stroke-width="2"/>
+    <!-- Side pocket lines -->
+    <path d="M -38 -25 L -26 -5" stroke="#616438" stroke-width="1.8"/>
+    <path d="M 38 -25 L 26 -5" stroke="#616438" stroke-width="1.8"/>
+  </g>
+
+  <g transform="translate(300, 480)" text-anchor="middle">
+    <text x="0" y="0" font-family="'Manrope', sans-serif" font-size="30" font-weight="700" fill="#1E2015" letter-spacing="1">Shorts</text>
+    <text x="0" y="34" font-family="'Manrope', sans-serif" font-size="13" font-weight="600" fill="#65675E" letter-spacing="2">PLAYFUL & EASY MOVEMENT</text>
+    <text x="0" y="70" font-family="'Manrope', sans-serif" font-size="12" font-weight="700" fill="#616438" letter-spacing="2.5">SHOP SHORTS &rarr;</text>
+  </g>
+</svg>
