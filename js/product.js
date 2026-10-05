@@ -233,14 +233,25 @@ function renderProductDetails(p) {
           <!-- Inline Validation Message -->
           <div id="inlineValidationMessage" class="form-message" role="alert"></div>
 
-          <!-- Order On WhatsApp CTA -->
+          <!-- Product Action Buttons: ADD TO BAG & ORDER ON WHATSAPP -->
           <div class="product-actions-box">
-            <button type="button" id="btnOrderWhatsApp" class="btn btn-order-wa">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.8 14.15c-.24.68-1.2 1.25-1.72 1.33-.48.07-1.1.1-3.21-.78-2.69-1.12-4.43-3.84-4.57-4.02-.13-.18-1.1-1.46-1.1-2.79 0-1.33.7-1.98.95-2.25.24-.26.54-.33.72-.33.18 0 .36 0 .52.01.17.01.4.06.61.56.24.58.82 2 .89 2.15.07.15.11.33.02.53-.1.19-.15.31-.3.48-.15.18-.31.39-.44.52-.15.15-.31.31-.13.62.18.31.78 1.29 1.68 2.09 1.15 1.03 2.13 1.35 2.43 1.5.3.15.48.13.66-.08.18-.21.78-.91.99-1.22.21-.31.42-.26.7-.16.29.1 1.83.86 2.14 1.02.31.15.52.23.6.36.07.12.07.72-.17 1.4z"/></svg>
-              <span>ORDER ON WHATSAPP</span>
-            </button>
+            <div class="product-actions-grid">
+              <button type="button" id="btnAddToBag" class="btn btn-add-bag">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                <span id="btnAddToBagText">ADD TO BAG</span>
+              </button>
+
+              <button type="button" id="btnOrderWhatsApp" class="btn btn-order-wa">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.8 14.15c-.24.68-1.2 1.25-1.72 1.33-.48.07-1.1.1-3.21-.78-2.69-1.12-4.43-3.84-4.57-4.02-.13-.18-1.1-1.46-1.1-2.79 0-1.33.7-1.98.95-2.25.24-.26.54-.33.72-.33.18 0 .36 0 .52.01.17.01.4.06.61.56.24.58.82 2 .89 2.15.07.15.11.33.02.53-.1.19-.15.31-.3.48-.15.18-.31.39-.44.52-.15.15-.31.31-.13.62.18.31.78 1.29 1.68 2.09 1.15 1.03 2.13 1.35 2.43 1.5.3.15.48.13.66-.08.18-.21.78-.91.99-1.22.21-.31.42-.26.7-.16.29.1 1.83.86 2.14 1.02.31.15.52.23.6.36.07.12.07.72-.17 1.4z"/></svg>
+                <span>ORDER ON WHATSAPP</span>
+              </button>
+            </div>
             <div class="wa-order-note">
-              <span>💬 Opens WhatsApp with pre-filled product & size details</span>
+              <span>💬 Add to Bag for multi-item order, or click Order on WhatsApp for instant checkout</span>
             </div>
           </div>
         </form>
@@ -299,6 +310,8 @@ function bindProductDetailInteractions(p) {
   const btnDecrement = document.getElementById('qtyDecrement');
   const btnIncrement = document.getElementById('qtyIncrement');
   const btnOrderWA = document.getElementById('btnOrderWhatsApp');
+  const btnAddToBag = document.getElementById('btnAddToBag');
+  const btnAddToBagText = document.getElementById('btnAddToBagText');
   const validationMsg = document.getElementById('inlineValidationMessage');
 
   // Thumbnail Clicker
@@ -391,6 +404,57 @@ function bindProductDetailInteractions(p) {
       };
 
       WhatsAppService.orderProduct(p, selection, validationMsg);
+    });
+  }
+
+  // ADD TO BAG Button Click (Seamless Cart integration - zero impact on old modules)
+  if (btnAddToBag) {
+    btnAddToBag.addEventListener('click', () => {
+      // 1. Validate Size Selection (if product has sizes)
+      if (Array.isArray(p.sizes) && p.sizes.length > 0 && !selectedSize) {
+        if (validationMsg) {
+          validationMsg.textContent = 'Please select a size for your child before adding to bag.';
+          validationMsg.className = 'form-message is-error';
+          validationMsg.style.display = 'flex';
+          validationMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+        return;
+      }
+
+      // 2. Resolve Colour Selection (if product has colors)
+      let colorToUse = selectedColor;
+      if (Array.isArray(p.colors) && p.colors.length > 0 && !colorToUse) {
+        colorToUse = p.colors[0];
+      }
+
+      const selection = {
+        size: selectedSize || 'Standard',
+        color: colorToUse || 'Standard',
+        quantity: selectedQuantity || 1
+      };
+
+      // 3. Add to Cart via Cart API
+      if (typeof Cart !== 'undefined' && Cart.addItem) {
+        const added = Cart.addItem(p, selection);
+
+        if (added) {
+          if (validationMsg) {
+            validationMsg.textContent = '';
+            validationMsg.style.display = 'none';
+          }
+
+          // Visual feedback on the button
+          btnAddToBag.classList.add('is-added');
+          if (btnAddToBagText) btnAddToBagText.textContent = '✓ ADDED TO BAG!';
+
+          setTimeout(() => {
+            btnAddToBag.classList.remove('is-added');
+            if (btnAddToBagText) btnAddToBagText.textContent = 'ADD TO BAG';
+          }, 1800);
+        }
+      } else {
+        console.warn('Cart module not available');
+      }
     });
   }
 

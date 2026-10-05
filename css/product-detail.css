@@ -325,34 +325,104 @@
   border-top: 1px solid var(--color-border);
 }
 
+.product-actions-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (min-width: 580px) {
+  .product-actions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+}
+
+.btn-add-bag {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: var(--font-size-sm);
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+  border: 1px solid var(--color-primary-dark);
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(30, 32, 21, 0.14);
+  transition: all var(--transition-fast);
+}
+
+.btn-add-bag:hover {
+  background-color: var(--color-brand-olive-dark);
+  border-color: var(--color-brand-olive-dark);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(30, 32, 21, 0.22);
+}
+
+.btn-add-bag:active {
+  transform: translateY(0);
+}
+
+.btn-add-bag svg {
+  width: 19px;
+  height: 19px;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+  flex-shrink: 0;
+}
+
+.btn-add-bag.is-added {
+  background-color: var(--color-brand-olive);
+  border-color: var(--color-brand-olive);
+  color: var(--color-white);
+  box-shadow: 0 4px 14px rgba(97, 100, 56, 0.3);
+}
+
 .btn-order-wa {
   width: 100%;
-  padding: 16px 24px;
+  padding: 16px 20px;
   font-size: var(--font-size-sm);
   font-weight: var(--weight-bold);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   background-color: var(--color-whatsapp);
   color: var(--color-white);
+  border: 1px solid var(--color-whatsapp);
   border-radius: var(--radius-sm);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   box-shadow: 0 4px 16px rgba(37, 211, 102, 0.25);
+  cursor: pointer;
   transition: all var(--transition-fast);
 }
 
 .btn-order-wa:hover {
   background-color: var(--color-whatsapp-dark);
+  border-color: var(--color-whatsapp-dark);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+}
+
+.btn-order-wa:active {
+  transform: translateY(0);
 }
 
 .btn-order-wa svg {
   width: 20px;
   height: 20px;
   fill: currentColor;
+  flex-shrink: 0;
 }
 
 /* Order Instruction Note */
