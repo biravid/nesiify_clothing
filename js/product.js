@@ -6,7 +6,21 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initProductDetailPage();
+  setupProductBackNav();
 });
+
+function setupProductBackNav() {
+  const backBtn = document.getElementById('productBackBtn');
+  if (!backBtn) return;
+
+  backBtn.addEventListener('click', (e) => {
+    // If user arrived from our shop or site, use history.back() to keep filter & scroll state
+    if (document.referrer && (document.referrer.includes(window.location.host) || document.referrer.includes('shop.html'))) {
+      e.preventDefault();
+      window.history.back();
+    }
+  });
+}
 
 let currentProduct = null;
 let selectedSize = null;

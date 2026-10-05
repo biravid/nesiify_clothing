@@ -174,6 +174,22 @@
     font-size: 11px;
   }
 
+  /* Horizontal swipeable category pills */
+  .category-filters-container {
+    margin-bottom: var(--space-md);
+    padding-bottom: 2px;
+  }
+  .category-filters {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding: 2px 4px 6px 4px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .filter-btn {
+    flex-shrink: 0;
+  }
+
   /* Category Grid: 2 columns on small phones */
   .category-grid {
     grid-template-columns: repeat(2, 1fr);
