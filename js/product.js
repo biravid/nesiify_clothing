@@ -70,6 +70,35 @@ function renderProductDetails(p) {
   // Update document title and breadcrumb
   document.title = `${p.name} | ${typeof SITE_CONFIG !== 'undefined' ? SITE_CONFIG.brandName : 'Brand Name'}`;
   
+  // Inject Dynamic Schema.org Product JSON-LD for Google Rich Results
+  let schemaScript = document.getElementById('productJsonLd');
+  if (!schemaScript) {
+    schemaScript = document.createElement('script');
+    schemaScript.id = 'productJsonLd';
+    schemaScript.type = 'application/ld+json';
+    document.head.appendChild(schemaScript);
+  }
+  schemaScript.textContent = JSON.stringify({
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": p.name,
+    "image": p.images && p.images[0] ? p.images[0] : undefined,
+    "description": p.description,
+    "sku": p.id,
+    "brand": {
+      "@type": "Brand",
+      "name": "Nesiify Clothing"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": window.location.href,
+      "priceCurrency": "INR",
+      "price": p.price,
+      "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition"
+    }
+  });
+
   const breadcrumbCategory = document.getElementById('breadcrumbCategory');
   const breadcrumbProduct = document.getElementById('breadcrumbProductName');
   if (breadcrumbCategory) {

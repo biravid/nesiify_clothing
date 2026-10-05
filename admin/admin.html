@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nesiify Clothing — Product Manager</title>
+  <meta name="description" content="Local admin product manager utility to generate product JSON for Nesiify Clothing.">
+  <link rel="icon" type="image/svg+xml" href="../assets/logo/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+
+  <!-- Top Navigation Bar -->
+  <header class="admin-navbar">
+    <div class="admin-nav-container">
+      <div class="admin-nav-brand">
+        <div class="admin-logo-wrapper">
+          <img src="../assets/logo/nesiify_logo.jpeg" alt="Nesiify Clothing" class="admin-logo-img">
+        </div>
+        <span class="admin-badge-pill">Admin Tool</span>
+      </div>
+
+      <div class="admin-nav-links">
+        <a href="../shop.html" class="admin-nav-link" target="_blank" rel="noopener">
+          <span>View Live Shop</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="admin-header">
+    <div class="admin-title-row">
+      <h1 class="admin-main-title">Nesiify Clothing Product Manager</h1>
+    </div>
+    <p class="admin-subtitle">Create product data for your Nesiify Clothing catalogue.</p>
+  </div>
+
+  <!-- Main Layout -->
+  <main class="admin-main-layout">
+
+    <!-- Left Column: Form -->
+    <div class="admin-form-column">
+
+      <!-- Status Banner -->
+      <div id="adminFormBanner" class="admin-banner" role="alert" aria-live="polite">
+        <span id="adminBannerIcon">⚠️</span>
+        <span id="adminBannerMsg">Please correct the errors in the form below.</span>
+      </div>
+
+      <form id="productForm" novalidate>
+
+        <!-- Card 1: Basic Information -->
+        <section class="admin-card">
+          <div class="admin-card-title">
+            <span>1. Basic Product Info</span>
+            <span class="admin-card-step">Step 1</span>
+          </div>
+
+          <div class="admin-form-row">
+            <!-- Product Code -->
+            <div class="admin-form-group">
+              <label for="productCode" class="admin-label admin-label-required">Product Code</label>
+              <input 
+                type="text" 
+                id="productCode" 
+                class="admin-input" 
+                placeholder="e.g. NC009" 
+                autocomplete="off"
+                required
+              >
+              <div class="admin-hint">Unique identifier (e.g. NC009)</div>
+              <div id="productCodeError" class="admin-field-error">Please enter a valid product code.</div>
+            </div>
+
+            <!-- Price -->
+            <div class="admin-form-group">
+              <label for="productPrice" class="admin-label admin-label-required">Price (₹)</label>
+              <div class="admin-input-prefix-wrapper">
+                <span class="admin-input-prefix">₹</span>
+                <input 
+                  type="number" 
+                  id="productPrice" 
+                  class="admin-input admin-input-prefixed" 
+                  placeholder="e.g. 499" 
+                  min="1" 
+                  step="1"
+                  required
+                >
+              </div>
+              <div class="admin-hint">Retail price in INR</div>
+              <div id="productPriceError" class="admin-field-error">Please enter a valid price (greater than 0).</div>
+            </div>
+          </div>
+
+          <!-- Product Name -->
+          <div class="admin-form-group">
+            <label for="productName" class="admin-label admin-label-required">Product Name</label>
+            <input 
+              type="text" 
+              id="productName" 
+              class="admin-input" 
+              placeholder="e.g. Kids Cotton Everyday T-Shirt" 
+              autocomplete="off"
+              required
+            >
+            <div class="admin-hint">Descriptive title for display in the shop</div>
+            <div id="productNameError" class="admin-field-error">Please enter a product name.</div>
+          </div>
+        </section>
+
+        <!-- Card 2: Classification, Age & Sizes -->
+        <section class="admin-card">
+          <div class="admin-card-title">
+            <span>2. Classification & Fit</span>
+            <span class="admin-card-step">Step 2</span>
+          </div>
+
+          <div class="admin-form-row">
+            <!-- Category -->
+            <div class="admin-form-group">
+              <label for="productCategory" class="admin-label admin-label-required">Category</label>
+              <select id="productCategory" class="admin-select" required>
+                <option value="" disabled selected>Select category...</option>
+                <option value="T-Shirts">T-Shirts</option>
+                <option value="Pyjamas">Pyjamas</option>
+                <option value="Shorts">Shorts</option>
+                <option value="Sets">Sets</option>
+              </select>
+              <div id="productCategoryError" class="admin-field-error">Please select a category.</div>
+            </div>
+
+            <!-- Age Range -->
+            <div class="admin-form-group">
+              <label for="productAgeRange" class="admin-label admin-label-required">Age Range</label>
+              <select id="productAgeRange" class="admin-select" required>
+                <option value="" disabled selected>Select age range...</option>
+                <option value="2-4 years">2-4 years</option>
+                <option value="4-6 years">4-6 years</option>
+                <option value="6-8 years">6-8 years</option>
+                <option value="8-10 years">8-10 years</option>
+                <option value="10-12 years">10-12 years</option>
+              </select>
+              <div id="productAgeRangeError" class="admin-field-error">Please select an age range.</div>
+            </div>
+          </div>
+
+          <!-- Sizes -->
+          <div class="admin-form-group">
+            <label class="admin-label admin-label-required">Available Sizes</label>
+            <div class="admin-checkbox-grid" id="sizesContainer">
+              <label class="admin-checkbox-label">
+                <input type="checkbox" name="productSizes" value="2-4Y">
+                <span>2-4Y</span>
+              </label>
+              <label class="admin-checkbox-label">
+                <input type="checkbox" name="productSizes" value="4-6Y">
+                <span>4-6Y</span>
+              </label>
+              <label class="admin-checkbox-label">
+                <input type="checkbox" name="productSizes" value="6-8Y">
+                <span>6-8Y</span>
+              </label>
+              <label class="admin-checkbox-label">
+                <input type="checkbox" name="productSizes" value="8-10Y">
+                <span>8-10Y</span>
+              </label>
+              <label class="admin-checkbox-label">
+                <input type="checkbox" name="productSizes" value="10-12Y">
+                <span>10-12Y</span>
+              </label>
+            </div>
+            <div class="admin-hint">Select at least one size available for this piece</div>
+            <div id="productSizesError" class="admin-field-error">Please select at least one size.</div>
+          </div>
+        </section>
+
+        <!-- Card 3: Variants & Details -->
+        <section class="admin-card">
+          <div class="admin-card-title">
+            <span>3. Colours & Description</span>
+            <span class="admin-card-step">Step 3</span>
+          </div>
+
+          <!-- Colours (Tags/Chips) -->
+          <div class="admin-form-group">
+            <label class="admin-label">Colours</label>
+            <div class="admin-tags-container" id="colorTagsContainer">
+              <input 
+                type="text" 
+                id="colorTagInput" 
+                class="admin-tag-input" 
+                placeholder="Type a colour and press Enter or comma..."
+              >
+            </div>
+            <div class="admin-suggested-tags">
+              <span class="admin-suggested-title">Quick add:</span>
+              <button type="button" class="admin-suggested-btn" data-color="Sage Olive">+ Sage Olive</button>
+              <button type="button" class="admin-suggested-btn" data-color="Warm Cream">+ Warm Cream</button>
+              <button type="button" class="admin-suggested-btn" data-color="Dusty Olive">+ Dusty Olive</button>
+              <button type="button" class="admin-suggested-btn" data-color="Mustard">+ Mustard</button>
+              <button type="button" class="admin-suggested-btn" data-color="Sky Blue">+ Sky Blue</button>
+              <button type="button" class="admin-suggested-btn" data-color="Terracotta">+ Terracotta</button>
+            </div>
+            <div class="admin-hint">Enter colour names (e.g. Sage Olive, Blue, Pink). Optional.</div>
+          </div>
+
+          <!-- Product Description -->
+          <div class="admin-form-group">
+            <label for="productDescription" class="admin-label admin-label-required">Product Description</label>
+            <textarea 
+              id="productDescription" 
+              class="admin-textarea" 
+              rows="4" 
+              placeholder="Describe the fabric, comfort, cut, and suitability for kids daily wear..."
+              required
+            ></textarea>
+            <div id="productDescriptionError" class="admin-field-error">Please enter a product description.</div>
+          </div>
+        </section>
+
+        <!-- Card 4: Product Images -->
+        <section class="admin-card">
+          <div class="admin-card-title">
+            <span>4. Product Images</span>
+            <span class="admin-card-step">Step 4</span>
+          </div>
+
+          <div class="admin-hint" style="margin-bottom: 14px;">
+            Place image files inside <code>assets/products/</code>. Enter only the filename below (e.g. <code>NC009-1.jpg</code>). Supported formats: <code>.jpg</code>, <code>.jpeg</code>, <code>.png</code>, <code>.webp</code>, <code>.svg</code>.
+          </div>
+
+          <div class="admin-image-inputs">
+            <!-- Image 1 -->
+            <div class="admin-image-row">
+              <label for="image1" class="admin-label admin-label-required">Image 1 (Primary / Thumbnail)</label>
+              <input 
+                type="text" 
+                id="image1" 
+                class="admin-input image-filename-input" 
+                placeholder="e.g. NC009-1.jpg" 
+                autocomplete="off"
+                required
+              >
+              <div class="admin-image-prefix-badge">Path preview: <strong id="previewPath1">assets/products/&mdash;</strong></div>
+              <div id="image1Error" class="admin-field-error">Image 1 is required and must have a valid extension (.jpg, .jpeg, .png, .webp, .svg).</div>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="admin-image-row">
+              <label for="image2" class="admin-label">Image 2 (Optional - Detail/Back)</label>
+              <input 
+                type="text" 
+                id="image2" 
+                class="admin-input image-filename-input" 
+                placeholder="e.g. NC009-2.jpg" 
+                autocomplete="off"
+              >
+              <div class="admin-image-prefix-badge">Path preview: <strong id="previewPath2">assets/products/&mdash;</strong></div>
+              <div id="image2Error" class="admin-field-error">Must have a valid image extension (.jpg, .jpeg, .png, .webp, .svg).</div>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="admin-image-row">
+              <label for="image3" class="admin-label">Image 3 (Optional)</label>
+              <input 
+                type="text" 
+                id="image3" 
+                class="admin-input image-filename-input" 
+                placeholder="e.g. NC009-3.jpg" 
+                autocomplete="off"
+              >
+              <div class="admin-image-prefix-badge">Path preview: <strong id="previewPath3">assets/products/&mdash;</strong></div>
+              <div id="image3Error" class="admin-field-error">Must have a valid image extension (.jpg, .jpeg, .png, .webp, .svg).</div>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="admin-image-row">
+              <label for="image4" class="admin-label">Image 4 (Optional)</label>
+              <input 
+                type="text" 
+                id="image4" 
+                class="admin-input image-filename-input" 
+                placeholder="e.g. NC009-4.jpg" 
+                autocomplete="off"
+              >
+              <div class="admin-image-prefix-badge">Path preview: <strong id="previewPath4">assets/products/&mdash;</strong></div>
+              <div id="image4Error" class="admin-field-error">Must have a valid image extension (.jpg, .jpeg, .png, .webp, .svg).</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Card 5: Badges & Flags -->
+        <section class="admin-card">
+          <div class="admin-card-title">
+            <span>5. Product Flags</span>
+            <span class="admin-card-step">Step 5</span>
+          </div>
+
+          <div class="admin-flags-row">
+            <label class="admin-flag-item">
+              <input type="checkbox" id="isNewArrival" checked>
+              <span>Mark as New Arrival (<code>"isNew": true</code>)</span>
+            </label>
+
+            <label class="admin-flag-item">
+              <input type="checkbox" id="isSampleProduct">
+              <span>Development Sample (<code>"isSample": true</code>)</span>
+            </label>
+          </div>
+        </section>
+
+        <!-- Submit & Clear Actions -->
+        <div class="admin-actions">
+          <button type="submit" id="btnGenerate" class="admin-btn admin-btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="12" y1="18" x2="12" y2="12"></line>
+              <line x1="9" y1="15" x2="15" y2="15"></line>
+            </svg>
+            <span>GENERATE PRODUCT</span>
+          </button>
+
+          <button type="button" id="btnReset" class="admin-btn admin-btn-secondary">
+            <span>Clear Form</span>
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- Right Column: JSON Preview & Workflow Tools -->
+    <div class="admin-preview-column">
+      
+      <!-- Preview Header -->
+      <div class="admin-preview-header">
+        <h2 class="admin-preview-title">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+          <span>Generated Product JSON</span>
+        </h2>
+
+        <div class="admin-preview-actions">
+          <button type="button" id="btnCopyJson" class="admin-btn-action" disabled>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span id="btnCopyLabel">COPY JSON</span>
+          </button>
+
+          <button type="button" id="btnDownloadJson" class="admin-btn-action" disabled>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>DOWNLOAD JSON</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Code Box -->
+      <div class="admin-code-wrapper">
+        <div class="admin-code-topbar">
+          <div class="admin-code-dot-row">
+            <span class="admin-code-dot" style="background-color: #ff5f56;"></span>
+            <span class="admin-code-dot" style="background-color: #ffbd2e;"></span>
+            <span class="admin-code-dot" style="background-color: #27c93f;"></span>
+          </div>
+          <span class="admin-code-label" id="jsonTargetFilename">product.json</span>
+        </div>
+        <pre class="admin-code-pre"><code id="jsonCodeOutput"><span class="admin-code-placeholder">// Fill out the product form on the left and click "GENERATE PRODUCT".
+// The formatted JSON matching data/products.json schema will appear here.</span></code></pre>
+      </div>
+
+      <!-- Workflow Instructions -->
+      <div class="admin-guide-card">
+        <h3 class="admin-guide-title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+          <span>How to Add to Catalogue</span>
+        </h3>
+        <ol class="admin-guide-list">
+          <li>Place your product images into <code>assets/products/</code> (e.g. <code>NC009-1.jpg</code>).</li>
+          <li>Fill out the form and click <strong>GENERATE PRODUCT</strong>.</li>
+          <li>Click <strong>[ COPY JSON ]</strong> to copy the object.</li>
+          <li>Open <code>data/products.json</code> in your editor and paste the object into the array.</li>
+          <li>Save the file — your new product will immediately appear on the shop page!</li>
+        </ol>
+      </div>
+
+      <!-- Session History -->
+      <div class="admin-session-history">
+        <div class="admin-session-title">Generated in this session:</div>
+        <div class="admin-session-tags" id="sessionHistoryTags">
+          <span style="font-size: 11px; color: var(--admin-text-muted);">None yet. Generated product IDs will appear here.</span>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Script -->
+  <script src="admin.js"></script>
+</body>
+</html>
