@@ -3,7 +3,7 @@
     "id": "NC001",
     "name": "Pink Cartoon Print T-Shirt",
     "price": 499,
-    "category": "T-Shirts",
+    "category": "Sets",
     "ageRange": "2-12 years",
     "images": [
       "assets/products/NC001-1.webp"
@@ -34,7 +34,7 @@
     "id": "NC002",
     "name": "Heather Grey Mini Print T-Shirt",
     "price": 499,
-    "category": "T-Shirts",
+    "category": "Sets",
     "ageRange": "2-12 years",
     "images": [
       "assets/products/NC002-1.webp"
@@ -65,7 +65,7 @@
     "id": "NC003",
     "name": "Lavender Floral Print T-Shirt",
     "price": 499,
-    "category": "T-Shirts",
+    "category": "Sets",
     "ageRange": "2-12 years",
     "images": [
       "assets/products/NC003-1.webp"
@@ -96,7 +96,7 @@
     "id": "NC004",
     "name": "Light Lavender Tiny Floral T-Shirt",
     "price": 499,
-    "category": "T-Shirts",
+    "category": "Sets",
     "ageRange": "2-12 years",
     "images": [
       "assets/products/NC004-1.webp"
@@ -127,7 +127,7 @@
     "id": "NC005",
     "name": "Navy Blue White Floral T-Shirt",
     "price": 499,
-    "category": "T-Shirts",
+    "category": "Sets",
     "ageRange": "2-12 years",
     "images": [
       "assets/products/NC005-1.webp"
@@ -158,7 +158,7 @@
     "id": "NC006",
     "name": "Black White Polka Dot T-Shirt",
     "price": 499,
-    "category": "T-Shirts",
+    "category": "Sets",
     "ageRange": "2-12 years",
     "images": [
       "assets/products/NC006-1.webp"

@@ -121,3 +121,4 @@ async function loadAndFilterProducts(category) {
     if (countElement) countElement.textContent = '0 products';
   }
 }
+

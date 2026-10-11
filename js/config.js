@@ -33,7 +33,7 @@ const SITE_CONFIG = {
 
   // Social & Web Links
   instagramUrl: "https://instagram.com/nesiify_clothing",
-  email: "contact@nesiifyclothing.com",
+  email: "nesiify.shop@gmail.com",
 
   // Operational Details
   businessHours: "Mon - Sat: 10:00 AM - 7:00 PM IST",
