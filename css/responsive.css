@@ -39,14 +39,56 @@
     --header-height: 62px;
   }
 
-  /* Desktop nav hidden, hamburger active */
+  /* Desktop nav hidden, mobile header layout active */
   .nav-links,
   .nav-wa-btn {
     display: none;
   }
 
+  /* Mobile Header Reordering: 1st Hamburger (Left) + Nesiify Logo + Bag Icon (Right) */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-actions {
+    display: contents;
+  }
+
+  /* 1st: Hamburger button on Left */
   .mobile-menu-toggle {
     display: flex;
+    order: 1;
+    margin-right: 8px;
+    z-index: 2;
+  }
+
+  /* 2nd: Nesiify Logo */
+  .brand-logo {
+    order: 2;
+    display: inline-flex;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .brand-logo-wrapper {
+    height: 40px;
+    width: auto;
+  }
+
+  .brand-logo-img {
+    height: 36px;
+    width: auto;
+    max-width: 125px;
+  }
+
+  /* 3rd: Bag Icon on Right */
+  .mobile-cart-toggle {
+    display: inline-flex !important;
+    order: 3;
+    margin-left: auto;
+    z-index: 2;
   }
 
   /* Fixed Mobile Bottom Bar */

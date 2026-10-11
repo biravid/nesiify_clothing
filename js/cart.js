@@ -330,7 +330,7 @@ const Cart = (() => {
    */
   function checkoutWhatsApp() {
     if (_items.length === 0) {
-      alert('Your shopping bag is empty.');
+      showToast('Your bag is empty. Add a product before checkout.');
       return;
     }
 

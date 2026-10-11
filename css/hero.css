@@ -2,6 +2,155 @@
    HERO, FEATURED EDITORIAL, BENEFITS, INSTAGRAM & CTAS
    =================================================== */
 
+/* ===================================================
+   COMPACT PRODUCT-FIRST STOREFRONT HERO & CATEGORY PILLS
+   =================================================== */
+.compact-hero-intro {
+  padding: 24px 0 6px 0;
+  background-color: var(--color-bg-main);
+  text-align: center;
+}
+
+.compact-intro-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-brand-olive);
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  padding: 3px 12px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 8px;
+}
+
+.compact-intro-title {
+  font-size: clamp(22px, 3.2vw, 32px);
+  font-weight: var(--weight-bold);
+  color: var(--color-primary-dark);
+  letter-spacing: -0.02em;
+  margin: 0 0 4px 0;
+  line-height: 1.2;
+}
+
+.compact-intro-sub {
+  font-size: clamp(13px, 1.3vw, 15px);
+  color: var(--color-text-secondary);
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1.45;
+}
+
+.home-category-bar {
+  padding: 10px 0 16px 0;
+  background-color: var(--color-bg-main);
+}
+
+.home-category-pills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.home-cat-pill {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  padding: 7px 18px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.home-cat-pill:hover {
+  border-color: var(--color-brand-olive);
+  color: var(--color-primary-dark);
+  background-color: var(--color-bg-secondary);
+}
+
+.home-cat-pill.is-active {
+  background-color: var(--color-brand-olive);
+  color: var(--color-white);
+  border-color: var(--color-brand-olive);
+}
+
+.home-storefront-section {
+  padding-top: var(--space-sm);
+  padding-bottom: var(--space-3xl);
+}
+
+.home-storefront-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-xs);
+  border-bottom: 1px solid var(--color-border);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.home-storefront-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.home-storefront-title {
+  font-size: clamp(18px, 2.2vw, 24px);
+  font-weight: var(--weight-bold);
+  color: var(--color-primary-dark);
+  margin: 0;
+}
+
+.home-storefront-count {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.home-view-all-link {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-brand-olive);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color var(--transition-fast);
+}
+
+.home-view-all-link:hover {
+  color: var(--color-brand-olive-dark);
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .compact-hero-intro {
+    padding: 14px 0 6px 0;
+  }
+  .home-category-bar {
+    padding: 8px 0 12px 0;
+  }
+  .home-cat-pill {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+  .home-storefront-section {
+    padding-top: 0;
+    padding-bottom: var(--space-2xl);
+  }
+}
+
 /* Hero Section */
 .hero-section {
   position: relative;

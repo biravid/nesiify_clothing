@@ -130,6 +130,75 @@ const WhatsAppService = {
   },
 
   /**
+   * Format multi-item cart order message for WhatsApp checkout
+   * @param {Array} items List of cart item objects
+   * @param {Object} customer Customer info { name, city }
+   * @returns {string} Formatted WhatsApp message
+   */
+  createCartOrderMessage(items, customer = {}) {
+    const currency = (typeof SITE_CONFIG !== 'undefined' && SITE_CONFIG.currency) ? SITE_CONFIG.currency : '₹';
+    let grandTotal = 0;
+
+    const lines = [
+      "Hi! I'd like to place an order.",
+      ""
+    ];
+
+    if (customer && (customer.name || customer.city)) {
+      const custInfo = [customer.name, customer.city].filter(Boolean).join(' • ');
+      lines.push(`Customer: ${custInfo}`, "");
+    }
+
+    lines.push("Order Items:", "");
+
+    items.forEach((item, idx) => {
+      const qty = Number(item.quantity) || 1;
+      const unitPrice = Number(item.price) || 0;
+      const subtotal = qty * unitPrice;
+      grandTotal += subtotal;
+
+      lines.push(`${idx + 1}. ${item.name}`);
+      lines.push(`Product Code: ${item.id}`);
+      if (item.size) lines.push(`Size: ${item.size}`);
+      if (item.color) lines.push(`Colour: ${item.color}`);
+      lines.push(`Quantity: ${qty}`);
+      lines.push(`Price: ${currency}${unitPrice.toLocaleString('en-IN')} each`);
+      lines.push(`Subtotal: ${currency}${subtotal.toLocaleString('en-IN')}`);
+      lines.push("");
+    });
+
+    lines.push("--------------------");
+    lines.push(`Total: ${currency}${grandTotal.toLocaleString('en-IN')}`);
+    lines.push("--------------------");
+    lines.push("");
+    lines.push("Please confirm availability and order details.");
+
+    return lines.join('\n');
+  },
+
+  /**
+   * Execute multi-item cart checkout via WhatsApp
+   * @param {Array} items List of cart items
+   * @param {Object} customer Customer details { name, city }
+   * @returns {boolean} Whether checkout was initiated
+   */
+  checkoutCartWhatsApp(items, customer = {}) {
+    if (!Array.isArray(items) || items.length === 0) {
+      if (typeof Cart !== 'undefined' && typeof Cart.showToast === 'function') {
+        Cart.showToast("Your bag is empty. Add a product before checkout.");
+      } else {
+        alert("Your bag is empty. Add a product before checkout.");
+      }
+      return false;
+    }
+
+    const message = this.createCartOrderMessage(items, customer);
+    const url = this.buildWhatsAppUrl(message);
+    window.open(url, '_blank', 'noopener,noreferrer');
+    return true;
+  },
+
+  /**
    * Quick chat trigger for size help or general inquiries
    * @param {string} customInquiry 
    */

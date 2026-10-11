@@ -1,178 +1,188 @@
 [
   {
     "id": "NC001",
-    "name": "Kids Cotton Everyday T-Shirt",
+    "name": "Pink Cartoon Print T-Shirt",
     "price": 499,
     "category": "T-Shirts",
-    "ageRange": "4-6 years",
+    "ageRange": "2-12 years",
     "images": [
-      "assets/products/nc001-1.jpg",
-      "assets/products/nc001-2.jpg"
+      "assets/products/NC001-1.webp"
     ],
-    "sizes": ["2-4Y", "4-6Y", "6-8Y"],
-    "colors": ["Sage Olive", "Warm Cream", "Sky Blue"],
-    "description": "Soft and breathable cotton t-shirt designed for everyday wear, easy movement, and active play. (Development sample product).",
+    "sizes": [
+      "2Y",
+      "3-4Y",
+      "5-6Y",
+      "7-8Y",
+      "9-10Y",
+      "11-12Y"
+    ],
+    "colors": [
+      "Pink"
+    ],
+    "description": "A playful pink kids T-shirt featuring colourful cartoon character prints across the fabric. The bright print gives it a fun and cheerful everyday look.",
     "details": [
-      "Soft breathable cotton jersey fabric",
-      "Ribbed crew neck that retains shape",
-      "Comfortable relaxed fit for easy play",
-      "Machine wash cold, tumble dry low"
+      "Soft comfortable fabric",
+      "Pink base colour",
+      "All-over colourful cartoon print",
+      "Classic round-neck design",
+      "Suitable for everyday wear"
     ],
     "isNew": true,
-    "isSample": true
+    "isSample": false
   },
   {
     "id": "NC002",
-    "name": "Soft Cotton Printed Pyjamas",
-    "price": 599,
-    "category": "Pyjamas",
-    "ageRange": "2-4 years",
+    "name": "Heather Grey Mini Print T-Shirt",
+    "price": 499,
+    "category": "T-Shirts",
+    "ageRange": "2-12 years",
     "images": [
-      "assets/products/nc002-1.jpg",
-      "assets/products/nc002-2.jpg"
+      "assets/products/NC002-1.webp"
     ],
-    "sizes": ["2-4Y", "4-6Y"],
-    "colors": ["Warm Beige Stripe", "Dusty Olive"],
-    "description": "All-day comfort pyjamas crafted from gentle, skin-friendly cotton with a soft elastic waistband. (Development sample product).",
+    "sizes": [
+      "2Y",
+      "3-4Y",
+      "5-6Y",
+      "7-8Y",
+      "9-10Y",
+      "11-12Y"
+    ],
+    "colors": [
+      "Heather Grey"
+    ],
+    "description": "A heather grey kids T-shirt featuring a small repeated dark print across the fabric. Its subtle pattern gives the design a simple and comfortable everyday look.",
     "details": [
-      "100% gentle combed cotton for sensitive skin",
-      "Soft stretch elastic waistband with no pinch",
-      "Ribbed ankle cuffs for snug cozy fit",
-      "Easy wash and colorfast fabric"
+      "Soft comfortable fabric",
+      "Heather grey base colour",
+      "Small repeated all-over print",
+      "Classic round-neck design",
+      "Simple everyday kidswear style"
     ],
     "isNew": true,
-    "isSample": true
+    "isSample": false
   },
   {
     "id": "NC003",
-    "name": "Playtime Drawstring Shorts",
-    "price": 449,
-    "category": "Shorts",
-    "ageRange": "6-8 years",
+    "name": "Lavender Floral Print T-Shirt",
+    "price": 499,
+    "category": "T-Shirts",
+    "ageRange": "2-12 years",
     "images": [
-      "assets/products/nc003-1.jpg",
-      "assets/products/nc003-2.jpg"
+      "assets/products/NC003-1.webp"
     ],
-    "sizes": ["4-6Y", "6-8Y", "8-10Y"],
-    "colors": ["Olive Green", "Charcoal", "Sand Tan"],
-    "description": "Practical and comfortable cotton shorts with an adjustable drawstring waistband and side pockets. (Development sample product).",
+    "sizes": [
+      "2Y",
+      "3-4Y",
+      "5-6Y",
+      "7-8Y",
+      "9-10Y",
+      "11-12Y"
+    ],
+    "colors": [
+      "Lavender Purple"
+    ],
+    "description": "A lavender purple kids T-shirt featuring a cheerful floral print in white, pink and green tones. The colourful pattern gives it a playful everyday look.",
     "details": [
-      "Durable lightweight cotton twill blend",
-      "Functional drawstring with reinforced eyelets",
-      "Deep side pockets for little treasures",
-      "Double-stitched seams for rough-and-tumble play"
+      "Soft comfortable fabric",
+      "Lavender purple base colour",
+      "White, pink and green floral print",
+      "Classic round-neck design",
+      "Suitable for everyday wear"
     ],
-    "isNew": false,
-    "isSample": true
+    "isNew": true,
+    "isSample": false
   },
   {
     "id": "NC004",
-    "name": "Daily Comfort Co-ord Set",
-    "price": 899,
-    "category": "Sets",
-    "ageRange": "4-6 years",
+    "name": "Light Lavender Tiny Floral T-Shirt",
+    "price": 499,
+    "category": "T-Shirts",
+    "ageRange": "2-12 years",
     "images": [
-      "assets/products/nc004-1.jpg",
-      "assets/products/nc004-2.jpg"
+      "assets/products/NC004-1.webp"
     ],
-    "sizes": ["2-4Y", "4-6Y", "6-8Y"],
-    "colors": ["Terracotta", "Forest Green", "Soft Ochre"],
-    "description": "Matching two-piece set featuring a relaxed-fit crew tee and comfortable pull-on shorts. (Development sample product).",
+    "sizes": [
+      "2Y",
+      "3-4Y",
+      "5-6Y",
+      "7-8Y",
+      "9-10Y",
+      "11-12Y"
+    ],
+    "colors": [
+      "Light Lavender"
+    ],
+    "description": "A light lavender kids T-shirt covered with a delicate all-over floral print in soft purple and green tones. The small floral pattern creates a neat and playful look.",
     "details": [
-      "Two-piece matching top and bottom set",
-      "Breathable pure cotton for warm days",
-      "Non-binding elastic waistband on shorts",
-      "Pre-shrunk fabric to prevent shrinking"
+      "Soft comfortable fabric",
+      "Light lavender base colour",
+      "Small all-over floral print",
+      "Purple and green floral detailing",
+      "Comfortable round-neck style"
     ],
     "isNew": true,
-    "isSample": true
+    "isSample": false
   },
   {
     "id": "NC005",
-    "name": "Striped Round-Neck Tee",
+    "name": "Navy Blue White Floral T-Shirt",
     "price": 499,
     "category": "T-Shirts",
-    "ageRange": "8-10 years",
+    "ageRange": "2-12 years",
     "images": [
-      "assets/products/nc005-1.jpg",
-      "assets/products/nc005-2.jpg"
+      "assets/products/NC005-1.webp"
     ],
-    "sizes": ["6-8Y", "8-10Y", "10-12Y"],
-    "colors": ["Navy / Cream Stripe", "Olive / White Stripe"],
-    "description": "Classic yarn-dyed striped t-shirt made with soft cotton yarn for a smooth touch against delicate skin. (Development sample product).",
+    "sizes": [
+      "2Y",
+      "3-4Y",
+      "5-6Y",
+      "7-8Y",
+      "9-10Y",
+      "11-12Y"
+    ],
+    "colors": [
+      "Navy Blue"
+    ],
+    "description": "A deep navy blue kids T-shirt featuring bold white floral-inspired prints. The strong contrast creates a playful and eye-catching everyday style.",
     "details": [
-      "Yarn-dyed cotton stripes that stay bright",
-      "Drop-shoulder silhouette for relaxed movement",
-      "Tagless neck print for itch-free comfort",
-      "Machine washable"
+      "Comfortable everyday fabric",
+      "Deep navy blue base colour",
+      "Bold white floral-inspired print",
+      "Classic round-neck design",
+      "Easy-to-wear everyday style"
     ],
     "isNew": true,
-    "isSample": true
+    "isSample": false
   },
   {
     "id": "NC006",
-    "name": "All-Day Relaxed Pyjamas",
-    "price": 649,
-    "category": "Pyjamas",
-    "ageRange": "4-6 years",
+    "name": "Black White Polka Dot T-Shirt",
+    "price": 499,
+    "category": "T-Shirts",
+    "ageRange": "2-12 years",
     "images": [
-      "assets/products/nc006-1.jpg",
-      "assets/products/nc006-2.jpg"
+      "assets/products/NC006-1.webp"
     ],
-    "sizes": ["2-4Y", "4-6Y", "6-8Y"],
-    "colors": ["Sage Green", "Warm Grey"],
-    "description": "Lightweight and relaxed pyjamas designed for sleeping, lounging, and everyday indoor comfort. (Development sample product).",
+    "sizes": [
+      "2Y",
+      "3-4Y",
+      "5-6Y",
+      "7-8Y",
+      "9-10Y",
+      "11-12Y"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "description": "A classic black kids T-shirt featuring an all-over white polka dot print. The contrasting pattern gives the design a fun and stylish everyday appearance.",
     "details": [
-      "Ultra-soft cotton slub knit",
-      "Comfortable wide-leg fit for airflow",
-      "Covered elastic waist that stays gentle",
-      "Retains softness after every wash"
-    ],
-    "isNew": false,
-    "isSample": true
-  },
-  {
-    "id": "NC007",
-    "name": "Breathable Cotton Shorts",
-    "price": 429,
-    "category": "Shorts",
-    "ageRange": "2-4 years",
-    "images": [
-      "assets/products/nc007-1.jpg",
-      "assets/products/nc007-2.jpg"
-    ],
-    "sizes": ["2-4Y", "4-6Y"],
-    "colors": ["Khaki", "Sky Blue", "Rust"],
-    "description": "Everyday pull-on shorts with a relaxed leg opening, designed for toddlers and young kids on the move. (Development sample product).",
-    "details": [
-      "100% natural cotton canvas weave",
-      "Stretchy waistband for quick independent dressing",
-      "Soft washed finish for instant comfort",
-      "Colorfast and durable"
-    ],
-    "isNew": false,
-    "isSample": true
-  },
-  {
-    "id": "NC008",
-    "name": "Everyday Summer Lounge Set",
-    "price": 949,
-    "category": "Sets",
-    "ageRange": "10-12 years",
-    "images": [
-      "assets/products/nc008-1.jpg",
-      "assets/products/nc008-2.jpg"
-    ],
-    "sizes": ["8-10Y", "10-12Y"],
-    "colors": ["Olive Ochre", "Charcoal Mist"],
-    "description": "Coordinated tee and casual shorts set tailored in breathable cotton slub for older kids. (Development sample product).",
-    "details": [
-      "Premium textured cotton slub fabric",
-      "Modern clean cuts with minimal branding",
-      "Deep pockets and drawstring adjustment",
-      "Gentle machine wash"
+      "Soft comfortable fabric",
+      "Black base colour",
+      "All-over white polka dot print",
+      "Classic round-neck style",
+      "Suitable for casual everyday wear"
     ],
     "isNew": true,
-    "isSample": true
+    "isSample": false
   }
 ]

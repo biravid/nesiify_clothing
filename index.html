@@ -11,7 +11,7 @@
   <meta property="og:description" content="Daily wear with comfort. Everyday kidswear designed for comfort, play and easy movement.">
   <meta property="og:type" content="website">
   
-  <link rel="icon" type="image/jpeg" href="assets/logo/nesiify_logo.jpeg">
+  <link rel="icon" type="image/webp" href="assets/logo/nesiify_logo.webp">
 
   <!-- Google Fonts: Manrope -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,7 +42,7 @@
     <div class="container navbar">
       <a href="index.html" class="brand-logo" aria-label="Nesiify Clothing Home">
         <div class="brand-logo-wrapper">
-          <img src="assets/logo/nesiify_logo.jpeg" alt="Nesiify Clothing Logo" class="brand-logo-img">
+          <img src="assets/logo/nesiify_logo.webp" alt="Nesiify Clothing Logo" class="brand-logo-img">
         </div>
       </a>
 
@@ -79,7 +79,7 @@
   <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
     <div class="mobile-drawer-header">
       <div class="brand-logo-wrapper">
-        <img src="assets/logo/nesiify_logo.jpeg" alt="Nesiify Clothing Logo" class="brand-logo-img">
+        <img src="assets/logo/nesiify_logo.webp" alt="Nesiify Clothing Logo" class="brand-logo-img">
       </div>
       <button type="button" class="mobile-drawer-close" aria-label="Close menu">&times;</button>
     </div>
@@ -101,89 +101,48 @@
   </div>
 
   <main id="mainContent" class="main-content">
-    <!-- SECTION 3 — HERO -->
-    <section class="hero-section">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="hero-tag">
-            <span class="hero-tag-dot"></span>
-            <span>Kids Clothing &bull; Age 2–12</span>
-          </div>
-          <h1 class="hero-title">Comfort Made for Little Ones</h1>
-          <p class="hero-subtitle">Everyday kidswear designed for comfort, play and easy movement.</p>
-          <div class="hero-cta-group">
-            <a href="shop.html" class="btn btn-primary" id="heroShopBtn">SHOP COLLECTION</a>
-            <button type="button" class="btn btn-secondary btn-whatsapp-chat" data-whatsapp-msg="Hi! I am interested in Nesiify Clothing kidswear collection and would love to check availability." id="heroWhatsAppBtn">ORDER ON WHATSAPP</button>
-          </div>
-        </div>
-        <div class="hero-image-wrapper">
-          <img src="assets/banners/hero-banner.jpg" alt="Happy kids wearing comfortable everyday cotton clothing" width="800" height="520">
-          <div class="hero-badge-overlay">
-            <span class="badge-dot"></span>
-            <div>
-              <div class="badge-text-bold">Daily Wear with Comfort</div>
-              <div class="badge-text-sub">Genuine Quality &bull; WhatsApp Direct Orders</div>
-            </div>
-          </div>
-        </div>
+    <!-- SECTION 1 — COMPACT STOREFRONT INTRO -->
+    <section class="compact-hero-intro" aria-label="Brand Introduction">
+      <div class="container text-center">
+        <div class="compact-intro-badge">✨ Kids Clothing &bull; Ages 2–12</div>
+        <h1 class="compact-intro-title">Comfortable Everyday Wear for Kids</h1>
+        <p class="compact-intro-sub">100% breathable cotton pieces made for play, comfort and easy movement. Select any piece to view details and order directly on WhatsApp.</p>
       </div>
     </section>
 
-    <!-- SECTION 4 — SHOP BY CATEGORY -->
-    <section class="section section-secondary" id="categoriesSection">
+    <!-- SECTION 2 — QUICK CATEGORY SHORTCUTS -->
+    <nav class="home-category-bar" aria-label="Quick Category Shortcuts">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Essential Categories</span>
-          <h2 class="section-title">Shop by Category</h2>
-          <p class="section-subtitle">Explore comfortable, everyday kidswear crafted for ages 2 to 12.</p>
-        </div>
-        <div class="category-grid">
-          <a href="shop.html?category=t-shirts" class="category-card" aria-label="Shop T-Shirts">
-            <img src="assets/categories/t-shirts.svg" alt="T-Shirts" loading="lazy" width="300" height="375">
-            <div class="category-card-overlay">
-              <span class="category-card-title">T-Shirts</span>
-            </div>
-          </a>
-          <a href="shop.html?category=pyjamas" class="category-card" aria-label="Shop Pyjamas">
-            <img src="assets/categories/pyjamas.svg" alt="Pyjamas" loading="lazy" width="300" height="375">
-            <div class="category-card-overlay">
-              <span class="category-card-title">Pyjamas</span>
-            </div>
-          </a>
-          <a href="shop.html?category=shorts" class="category-card" aria-label="Shop Shorts">
-            <img src="assets/categories/shorts.svg" alt="Shorts" loading="lazy" width="300" height="375">
-            <div class="category-card-overlay">
-              <span class="category-card-title">Shorts</span>
-            </div>
-          </a>
-          <a href="shop.html?category=sets" class="category-card" aria-label="Shop Sets">
-            <img src="assets/categories/sets.svg" alt="Sets" loading="lazy" width="300" height="375">
-            <div class="category-card-overlay">
-              <span class="category-card-title">Sets</span>
-            </div>
-          </a>
+        <div class="home-category-pills" id="homeCategoryPills" role="tablist">
+          <button type="button" class="home-cat-pill is-active" data-category="all">All Products</button>
+          <button type="button" class="home-cat-pill" data-category="t-shirts">T-Shirts</button>
+          <button type="button" class="home-cat-pill" data-category="pyjamas">Pyjamas</button>
+          <button type="button" class="home-cat-pill" data-category="shorts">Shorts</button>
+          <button type="button" class="home-cat-pill" data-category="sets">Sets</button>
         </div>
       </div>
-    </section>
+    </nav>
 
-    <!-- SECTION 5 — NEW ARRIVALS -->
-    <section class="section" id="newArrivalsSection">
+    <!-- SECTION 3 — STOREFRONT PRODUCTS (PRODUCT-FIRST HERO) -->
+    <section class="section home-storefront-section" id="productsSection">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Fresh Picks</span>
-          <h2 class="section-title">New Arrivals</h2>
-          <p class="section-subtitle">Everyday pieces made with soft, breathable cotton for little ones.</p>
+        <div class="home-storefront-header">
+          <div class="home-storefront-heading">
+            <h2 class="home-storefront-title" id="homeStorefrontTitle">All Products</h2>
+            <span class="home-storefront-count" id="homeStorefrontCount">Loading products...</span>
+          </div>
+          <a href="shop.html" class="home-view-all-link">
+            <span>Explore Complete Shop</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:inline-block;vertical-align:-1px;"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
         </div>
-        <div class="products-grid" id="homeNewArrivalsGrid">
+        <div class="products-grid" id="homeProductsGrid">
           <!-- Dynamically populated from products.json -->
         </div>
-        <div style="text-align: center; margin-top: var(--space-2xl);">
-          <a href="shop.html?category=new-arrivals" class="btn btn-secondary">VIEW ALL NEW ARRIVALS</a>
-        </div>
       </div>
     </section>
 
-    <!-- SECTION 6 — FEATURED COLLECTION -->
+    <!-- SECTION 4 — GENUINE QUALITY FOR KIDS (EDITORIAL SNAPSHOT) -->
     <section class="featured-collection-section">
       <div class="container featured-editorial-grid">
         <div class="featured-image-container">
@@ -198,7 +157,7 @@
       </div>
     </section>
 
-    <!-- SECTION 7 — WHY CHOOSE US -->
+    <!-- SECTION 5 — WHY CHOOSE US (BENEFITS) -->
     <section class="benefits-section">
       <div class="container">
         <div class="benefits-grid">
@@ -234,7 +193,23 @@
       </div>
     </section>
 
-    <!-- SECTION 8 — INSTAGRAM -->
+    <!-- SECTION 6 — WHATSAPP SIZING ASSISTANCE CTA -->
+    <section class="whatsapp-cta-section">
+      <div class="container">
+        <div class="whatsapp-cta-box">
+          <div class="whatsapp-cta-content">
+            <h2>Need help choosing the right size for your child?</h2>
+            <p>Chat with us directly on WhatsApp. We share exact measurements and fit recommendations for kids aged 2–12.</p>
+          </div>
+          <button type="button" class="btn btn-whatsapp btn-whatsapp-chat" data-whatsapp-msg="Hi! I need help choosing the right size for my child.">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.8 14.15c-.24.68-1.2 1.25-1.72 1.33-.48.07-1.1.1-3.21-.78-2.69-1.12-4.43-3.84-4.57-4.02-.13-.18-1.1-1.46-1.1-2.79 0-1.33.7-1.98.95-2.25.24-.26.54-.33.72-.33.18 0 .36 0 .52.01.17.01.4.06.61.56.24.58.82 2 .89 2.15.07.15.11.33.02.53-.1.19-.15.31-.3.48-.15.18-.31.39-.44.52-.15.15-.31.31-.13.62.18.31.78 1.29 1.68 2.09 1.15 1.03 2.13 1.35 2.43 1.5.3.15.48.13.66-.08.18-.21.78-.91.99-1.22.21-.31.42-.26.7-.16.29.1 1.83.86 2.14 1.02.31.15.52.23.6.36.07.12.07.72-.17 1.4z"/></svg>
+            <span>CHAT ON WHATSAPP</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7 — INSTAGRAM COMMUNITY -->
     <section class="instagram-section">
       <div class="container">
         <div class="section-header">
@@ -280,24 +255,8 @@
             </div>
           </a>
         </div>
-        <div>
+        <div style="text-align: center; margin-top: var(--space-xl);">
           <a href="#" class="btn btn-secondary" data-config="instagramUrl">FOLLOW US ON INSTAGRAM</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 9 — WHATSAPP CTA -->
-    <section class="whatsapp-cta-section">
-      <div class="container">
-        <div class="whatsapp-cta-box">
-          <div class="whatsapp-cta-content">
-            <h2>Need help choosing the right size for your child?</h2>
-            <p>Chat with us directly on WhatsApp. We share exact measurements and fit recommendations for kids aged 2–12.</p>
-          </div>
-          <button type="button" class="btn btn-whatsapp btn-whatsapp-chat" data-whatsapp-msg="Hi! I need help choosing the right size for my child.">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.8 14.15c-.24.68-1.2 1.25-1.72 1.33-.48.07-1.1.1-3.21-.78-2.69-1.12-4.43-3.84-4.57-4.02-.13-.18-1.1-1.46-1.1-2.79 0-1.33.7-1.98.95-2.25.24-.26.54-.33.72-.33.18 0 .36 0 .52.01.17.01.4.06.61.56.24.58.82 2 .89 2.15.07.15.11.33.02.53-.1.19-.15.31-.3.48-.15.18-.31.39-.44.52-.15.15-.31.31-.13.62.18.31.78 1.29 1.68 2.09 1.15 1.03 2.13 1.35 2.43 1.5.3.15.48.13.66-.08.18-.21.78-.91.99-1.22.21-.31.42-.26.7-.16.29.1 1.83.86 2.14 1.02.31.15.52.23.6.36.07.12.07.72-.17 1.4z"/></svg>
-            <span>CHAT ON WHATSAPP</span>
-          </button>
         </div>
       </div>
     </section>
@@ -309,7 +268,7 @@
       <div class="footer-grid">
         <div class="footer-col-brand">
           <div class="footer-logo-wrapper">
-            <img src="assets/logo/nesiify_logo.jpeg" alt="Nesiify Clothing Logo" class="footer-logo-img">
+            <img src="assets/logo/nesiify_logo.webp" alt="Nesiify Clothing Logo" class="footer-logo-img">
           </div>
           <div class="footer-brand-title">Nesiify Clothing</div>
           <p class="footer-brand-desc">Comfortable everyday clothing for kids aged 2–12.</p>
@@ -400,15 +359,52 @@
   <script src="js/navbar.js"></script>
   <script src="js/main.js"></script>
   <script>
-    // Initialize New Arrivals on Homepage
+    // Initialize Product-First Storefront on Homepage
     document.addEventListener('DOMContentLoaded', async () => {
-      const grid = document.getElementById('homeNewArrivalsGrid');
+      const grid = document.getElementById('homeProductsGrid');
+      const countEl = document.getElementById('homeStorefrontCount');
+      const titleEl = document.getElementById('homeStorefrontTitle');
+      const pillsContainer = document.getElementById('homeCategoryPills');
       if (!grid) return;
-      try {
-        const arrivals = await getNewArrivals(4);
-        grid.innerHTML = arrivals.map(p => renderProductCard(p)).join('');
-      } catch (e) {
-        grid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; color: var(--color-text-secondary);"><p>Products are temporarily unavailable. Please try again shortly.</p></div>';
+
+      async function renderProductsForCategory(cat = 'all') {
+        try {
+          const filtered = await getProductsByCategory(cat);
+          grid.innerHTML = filtered.map(p => renderProductCard(p)).join('');
+          if (countEl) {
+            countEl.textContent = `${filtered.length} ${filtered.length === 1 ? 'product' : 'products'}`;
+          }
+          if (titleEl) {
+            titleEl.textContent = cat.toLowerCase() === 'all' 
+              ? 'All Products' 
+              : cat.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+          }
+          const viewAllLink = document.querySelector('.home-view-all-link');
+          if (viewAllLink) {
+            viewAllLink.href = cat === 'all' ? 'shop.html' : `shop.html?category=${encodeURIComponent(cat)}`;
+          }
+        } catch (e) {
+          grid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px 20px; color: var(--color-text-secondary);"><p>Products are temporarily unavailable. Please try again shortly.</p></div>';
+        }
+      }
+
+      // Initial load: render all catalogue items
+      await renderProductsForCategory('all');
+
+      // Category Pill Interaction
+      if (pillsContainer) {
+        pillsContainer.addEventListener('click', async (e) => {
+          const pill = e.target.closest('.home-cat-pill');
+          if (!pill) return;
+          const category = pill.getAttribute('data-category');
+          if (!category) return;
+
+          pillsContainer.querySelectorAll('.home-cat-pill').forEach(btn => {
+            btn.classList.toggle('is-active', btn === pill);
+          });
+
+          await renderProductsForCategory(category);
+        });
       }
     });
   </script>

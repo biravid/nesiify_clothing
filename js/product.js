@@ -153,7 +153,7 @@ function renderProductDetails(p) {
   const sizeSelectorHTML = hasSizes ? `
     <div class="selector-group">
       <div class="selector-label">
-        <span>Select Size (Kidswear)</span>
+        <span>Select Size (Age in Years)</span>
         <span class="selector-selected-val" id="selectedSizeLabel">Select a size</span>
       </div>
       <div class="size-options" role="radiogroup" aria-label="Select size">
@@ -270,11 +270,29 @@ function renderProductDetails(p) {
 
           <div class="accordion-item">
             <button type="button" class="accordion-header">
-              <span>Kids Sizing Guide</span>
+              <span>Kids Sizing Guide (Ages 2–12)</span>
               <span class="accordion-icon">+</span>
             </button>
             <div class="accordion-content">
-              <p>Designed for children aged 2 to 12 years. If your child is between sizes or you prefer a roomier fit for growth, we recommend selecting one size up. You can also message us directly on WhatsApp for chest, waist, and length measurements!</p>
+              <p style="margin-bottom: 12px;">Standard kids sizing in years (2, 3-4, 5-6, 7-8, 9-10, 11-12). If your child is between sizes or you prefer a roomier fit for growth, we recommend selecting one size up:</p>
+              <table class="size-guide-table" style="width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 12px; border: 1px solid var(--color-border); border-radius: var(--radius-sm); overflow: hidden;">
+                <thead>
+                  <tr style="background: var(--color-bg-secondary); text-align: left; border-bottom: 1.5px solid var(--color-border);">
+                    <th style="padding: 8px 10px;">Size</th>
+                    <th style="padding: 8px 10px;">Age in Years</th>
+                    <th style="padding: 8px 10px;">Approx. Height</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-bottom: 1px solid var(--color-border);"><td style="padding: 7px 10px; font-weight: 700;">2Y</td><td style="padding: 7px 10px;">2 Years</td><td style="padding: 7px 10px;">85 – 92 cm</td></tr>
+                  <tr style="border-bottom: 1px solid var(--color-border);"><td style="padding: 7px 10px; font-weight: 700;">3-4Y</td><td style="padding: 7px 10px;">3 to 4 Years</td><td style="padding: 7px 10px;">93 – 104 cm</td></tr>
+                  <tr style="border-bottom: 1px solid var(--color-border);"><td style="padding: 7px 10px; font-weight: 700;">5-6Y</td><td style="padding: 7px 10px;">5 to 6 Years</td><td style="padding: 7px 10px;">105 – 116 cm</td></tr>
+                  <tr style="border-bottom: 1px solid var(--color-border);"><td style="padding: 7px 10px; font-weight: 700;">7-8Y</td><td style="padding: 7px 10px;">7 to 8 Years</td><td style="padding: 7px 10px;">117 – 128 cm</td></tr>
+                  <tr style="border-bottom: 1px solid var(--color-border);"><td style="padding: 7px 10px; font-weight: 700;">9-10Y</td><td style="padding: 7px 10px;">9 to 10 Years</td><td style="padding: 7px 10px;">129 – 140 cm</td></tr>
+                  <tr><td style="padding: 7px 10px; font-weight: 700;">11-12Y</td><td style="padding: 7px 10px;">11 to 12 Years</td><td style="padding: 7px 10px;">141 – 152 cm</td></tr>
+                </tbody>
+              </table>
+              <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">Need exact chest, waist or length measurements? Chat with us directly on WhatsApp for personal sizing advice!</p>
             </div>
           </div>
 

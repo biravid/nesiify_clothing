@@ -17,7 +17,7 @@ const SITE_CONFIG = {
   positioning: "Genuine Quality",
   description: "Comfortable everyday clothing for kids aged 2–12.",
   ageRange: "Age 2–12",
-  logoUrl: "assets/logo/nesiify_logo.jpeg",
+  logoUrl: "assets/logo/nesiify_logo.webp",
 
   // Primary Categories
   categories: [
