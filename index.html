@@ -117,50 +117,95 @@
   </div>
 
   <main id="mainContent" class="main-content">
-    <!-- SECTION 1 — COMPACT STOREFRONT INTRO -->
-    <section class="compact-hero-intro" aria-label="Brand Introduction">
-      <div class="container text-center">
-        <div class="compact-intro-badge">✨ Kids Clothing &bull; Ages 2–12</div>
-        <h1 class="compact-intro-title">Comfortable Everyday Wear for Kids</h1>
-        <p class="compact-intro-sub">100% breathable cotton pieces made for play, comfort and easy movement. Select any
-          piece to view details and order directly on WhatsApp.</p>
-      </div>
-    </section>
+    <!-- SECTION 1 — HERO PROMOTIONAL CAROUSEL (FULL WIDTH EDGE-TO-EDGE) -->
+    <section class="home-hero-carousel-section" aria-label="Featured Collection Showcase">
+      <div class="hero-carousel" id="heroCarousel" role="region" aria-roledescription="carousel"
+        aria-label="Nesiify Promotional Collection">
+        <div class="hero-carousel-slides">
+          <!-- Slide 1 -->
+          <div class="hero-carousel-slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 3"
+            aria-hidden="false">
+            <img src="assets/carousel/carousel-1.webp"
+              alt="Nesiify Clothing - Soft and breathable everyday essentials for kids" width="1376" height="768"
+              fetchpriority="high">
+            <div class="hero-slide-overlay">
+              <div class="container hero-slide-container">
+                <div class="hero-slide-content">
+                  <span class="hero-slide-badge">✨ Kids Clothing &bull; Ages 2–12</span>
+                  <h1 class="hero-slide-title">Comfortable Everyday Wear for Kids</h1>
+                  <p class="hero-slide-desc">100% breathable cotton pieces made for play, comfort and easy movement. Select any piece to view details and order directly on WhatsApp.</p>
+                  <div class="hero-slide-actions">
+                    <a href="shop.html" class="btn btn-hero-shop" id="heroShopBtn1">SHOP NOW</a>
+                    <a href="#productsSection" class="btn btn-hero-outline" id="heroCatalogBtn1">VIEW CATALOGUE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <!-- NEW 3-IMAGE AUTOMATIC HERO CAROUSEL -->
-    <section class="home-hero-carousel-section" aria-label="Promotional Showcase">
-      <div class="container">
-        <div class="hero-carousel" id="heroCarousel" role="region" aria-roledescription="carousel"
-          aria-label="Nesiify Promotional Collection">
-          <div class="hero-carousel-slides">
-            <div class="hero-carousel-slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 3"
-              aria-hidden="false">
-              <img src="assets/carousel/carousel-1.webp"
-                alt="Nesiify Clothing - Soft and breathable everyday essentials for kids" width="1376" height="768"
-                fetchpriority="high">
-            </div>
-            <div class="hero-carousel-slide" role="group" aria-roledescription="slide" aria-label="2 of 3"
-              aria-hidden="true">
-              <img src="assets/carousel/carousel-2.webp"
-                alt="Nesiify Clothing - Cozy comfort and everyday loungewear for kids" width="1376" height="768"
-                loading="lazy">
-            </div>
-            <div class="hero-carousel-slide" role="group" aria-roledescription="slide" aria-label="3 of 3"
-              aria-hidden="true">
-              <img src="assets/carousel/carousel-3.webp"
-                alt="Nesiify Clothing - Active kids everyday wear made for play" width="1376" height="768"
-                loading="lazy">
+          <!-- Slide 2 -->
+          <div class="hero-carousel-slide" role="group" aria-roledescription="slide" aria-label="2 of 3"
+            aria-hidden="true">
+            <img src="assets/carousel/carousel-2.webp"
+              alt="Nesiify Clothing - Cozy comfort and everyday loungewear for kids" width="1376" height="768"
+              loading="lazy">
+            <div class="hero-slide-overlay">
+              <div class="container hero-slide-container">
+                <div class="hero-slide-content">
+                  <span class="hero-slide-badge">🌿 100% Breathable Cotton</span>
+                  <h2 class="hero-slide-title">Gentle on Skin, Made for Play</h2>
+                  <p class="hero-slide-desc">Thoughtfully tailored kids sets and daily outfits with authentic quality and soft, skin-friendly fabrics.</p>
+                  <div class="hero-slide-actions">
+                    <a href="shop.html" class="btn btn-hero-shop" id="heroShopBtn2">SHOP NOW</a>
+                    <a href="shop.html?category=sets" class="btn btn-hero-outline" id="heroSetsBtn2">EXPLORE SETS</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- Pagination Indicators -->
-          <div class="hero-carousel-dots" role="tablist" aria-label="Carousel pagination">
-            <button type="button" class="carousel-dot is-active" role="tab" aria-selected="true" aria-label="Slide 1"
-              data-slide-index="0"></button>
-            <button type="button" class="carousel-dot" role="tab" aria-selected="false" aria-label="Slide 2"
-              data-slide-index="1"></button>
-            <button type="button" class="carousel-dot" role="tab" aria-selected="false" aria-label="Slide 3"
-              data-slide-index="2"></button>
+
+          <!-- Slide 3 -->
+          <div class="hero-carousel-slide" role="group" aria-roledescription="slide" aria-label="3 of 3"
+            aria-hidden="true">
+            <img src="assets/carousel/carousel-3.webp"
+              alt="Nesiify Clothing - Active kids everyday wear made for play" width="1376" height="768"
+              loading="lazy">
+            <div class="hero-slide-overlay">
+              <div class="container hero-slide-container">
+                <div class="hero-slide-content">
+                  <span class="hero-slide-badge">🏷️ Flat Prices from ₹299</span>
+                  <h2 class="hero-slide-title">Daily Styles Loved by Kids & Parents</h2>
+                  <p class="hero-slide-desc">Explore coordinated t-shirts, pyjamas and matching daily sets crafted for active little ones.</p>
+                  <div class="hero-slide-actions">
+                    <a href="shop.html" class="btn btn-hero-shop" id="heroShopBtn3">SHOP NOW</a>
+                    <button type="button" class="btn btn-hero-outline btn-whatsapp-chat" data-whatsapp-msg="Hi! I want to order kids wear from Nesiify Clothing.">CHAT ON WHATSAPP</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+
+        <!-- Carousel Navigation Arrows -->
+        <button type="button" class="hero-carousel-nav hero-carousel-prev" aria-label="Previous slide">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <button type="button" class="hero-carousel-nav hero-carousel-next" aria-label="Next slide">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+
+        <!-- Pagination Indicators -->
+        <div class="hero-carousel-dots" role="tablist" aria-label="Carousel pagination">
+          <button type="button" class="carousel-dot is-active" role="tab" aria-selected="true" aria-label="Slide 1"
+            data-slide-index="0"></button>
+          <button type="button" class="carousel-dot" role="tab" aria-selected="false" aria-label="Slide 2"
+            data-slide-index="1"></button>
+          <button type="button" class="carousel-dot" role="tab" aria-selected="false" aria-label="Slide 3"
+            data-slide-index="2"></button>
         </div>
       </div>
     </section>
@@ -283,8 +328,30 @@
           <h2 class="section-title">Follow @nesiify_clothing</h2>
           <p class="section-subtitle">Daily wear with comfort for little ones &bull; Ages 2–12</p>
         </div>
+        <!-- Clickable Instagram Showcase Card (Active while post tiles are pending) -->
+        <div class="instagram-placeholder-container">
+          <a href="https://instagram.com/nesiify_clothing" target="_blank" rel="noopener noreferrer" class="instagram-logo-card" data-config="instagramUrl" aria-label="Visit Nesiify Clothing on Instagram">
+            <div class="instagram-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </div>
+            <div class="instagram-card-content">
+              <span class="instagram-handle">@nesiify_clothing</span>
+              <span class="instagram-card-cta">Click to View Profile on Instagram &rarr;</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- 
+          NOTE: INSTAGRAM TILE IMAGES TEMPLATE (Kept in code for future use)
+          Uncomment this block and add your post images into assets/instagram/ (ig-1.jpg to ig-6.jpg)
+        -->
+        <!--
         <div class="instagram-grid">
-          <a href="#" class="instagram-item" data-config="instagramUrl" aria-label="Instagram post 1">
+          <a href="#" class="instagram-item" data-config="instagramUrl" target="_blank" rel="noopener noreferrer" aria-label="Instagram post 1">
             <img src="assets/instagram/ig-1.jpg" alt="Instagram tile 1" loading="lazy" width="200" height="200">
             <div class="instagram-overlay">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -294,7 +361,7 @@
               </svg>
             </div>
           </a>
-          <a href="#" class="instagram-item" data-config="instagramUrl" aria-label="Instagram post 2">
+          <a href="#" class="instagram-item" data-config="instagramUrl" target="_blank" rel="noopener noreferrer" aria-label="Instagram post 2">
             <img src="assets/instagram/ig-2.jpg" alt="Instagram tile 2" loading="lazy" width="200" height="200">
             <div class="instagram-overlay">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -304,7 +371,7 @@
               </svg>
             </div>
           </a>
-          <a href="#" class="instagram-item" data-config="instagramUrl" aria-label="Instagram post 3">
+          <a href="#" class="instagram-item" data-config="instagramUrl" target="_blank" rel="noopener noreferrer" aria-label="Instagram post 3">
             <img src="assets/instagram/ig-3.jpg" alt="Instagram tile 3" loading="lazy" width="200" height="200">
             <div class="instagram-overlay">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -314,7 +381,7 @@
               </svg>
             </div>
           </a>
-          <a href="#" class="instagram-item" data-config="instagramUrl" aria-label="Instagram post 4">
+          <a href="#" class="instagram-item" data-config="instagramUrl" target="_blank" rel="noopener noreferrer" aria-label="Instagram post 4">
             <img src="assets/instagram/ig-4.jpg" alt="Instagram tile 4" loading="lazy" width="200" height="200">
             <div class="instagram-overlay">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -324,7 +391,7 @@
               </svg>
             </div>
           </a>
-          <a href="#" class="instagram-item" data-config="instagramUrl" aria-label="Instagram post 5">
+          <a href="#" class="instagram-item" data-config="instagramUrl" target="_blank" rel="noopener noreferrer" aria-label="Instagram post 5">
             <img src="assets/instagram/ig-5.jpg" alt="Instagram tile 5" loading="lazy" width="200" height="200">
             <div class="instagram-overlay">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -334,7 +401,7 @@
               </svg>
             </div>
           </a>
-          <a href="#" class="instagram-item" data-config="instagramUrl" aria-label="Instagram post 6">
+          <a href="#" class="instagram-item" data-config="instagramUrl" target="_blank" rel="noopener noreferrer" aria-label="Instagram post 6">
             <img src="assets/instagram/ig-6.jpg" alt="Instagram tile 6" loading="lazy" width="200" height="200">
             <div class="instagram-overlay">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -345,8 +412,9 @@
             </div>
           </a>
         </div>
+        -->
         <div style="text-align: center; margin-top: var(--space-xl);">
-          <a href="#" class="btn btn-secondary" data-config="instagramUrl">FOLLOW US ON INSTAGRAM</a>
+          <a href="https://instagram.com/nesiify_clothing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-config="instagramUrl">FOLLOW US ON INSTAGRAM</a>
         </div>
       </div>
     </section>

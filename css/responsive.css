@@ -209,6 +209,15 @@
   .product-card-price {
     font-size: 14px;
     margin-bottom: 8px;
+    gap: 4px;
+  }
+
+  .product-card-price .product-price-discounted {
+    font-size: 14px;
+  }
+
+  .product-card-price .product-price-original {
+    font-size: 11px;
   }
 
   .product-card-action .btn {
@@ -294,5 +303,14 @@
 
   .product-card-price {
     font-size: 13px;
+    gap: 3px;
+  }
+
+  .product-card-price .product-price-discounted {
+    font-size: 13px;
+  }
+
+  .product-card-price .product-price-original {
+    font-size: 11px;
   }
 }

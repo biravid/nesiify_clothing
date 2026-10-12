@@ -449,6 +449,113 @@
   transform: scale(1.06);
 }
 
+/* Clickable Instagram Showcase Card */
+.instagram-placeholder-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--space-xl) auto var(--space-lg);
+  max-width: 440px;
+}
+
+.instagram-logo-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: 22px 28px;
+  background: var(--color-white);
+  border: 1.5px solid var(--color-border);
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  width: 100%;
+}
+
+.instagram-logo-card:hover {
+  transform: translateY(-4px);
+  border-color: #E1306C;
+  box-shadow: 0 12px 30px rgba(225, 48, 108, 0.16);
+}
+
+.instagram-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #ffffff;
+  flex-shrink: 0;
+  box-shadow: 0 6px 16px rgba(220, 39, 67, 0.32);
+  transition: transform 0.3s ease;
+}
+
+.instagram-logo-card:hover .instagram-icon-wrapper {
+  transform: scale(1.08) rotate(3deg);
+}
+
+.instagram-icon-wrapper svg {
+  width: 34px;
+  height: 34px;
+  stroke: #ffffff;
+}
+
+.instagram-card-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.instagram-handle {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 4px;
+  letter-spacing: -0.2px;
+}
+
+.instagram-card-cta {
+  font-size: 13px;
+  font-weight: 600;
+  color: #E1306C;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: gap 0.2s ease;
+}
+
+.instagram-logo-card:hover .instagram-card-cta {
+  gap: 8px;
+}
+
+@media (max-width: 480px) {
+  .instagram-logo-card {
+    padding: 16px 20px;
+    gap: var(--space-md);
+  }
+
+  .instagram-icon-wrapper {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+  }
+
+  .instagram-icon-wrapper svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .instagram-handle {
+    font-size: 16px;
+  }
+
+  .instagram-card-cta {
+    font-size: 12px;
+  }
+}
+
 /* WhatsApp Help Banner CTA */
 .whatsapp-cta-section {
   background-color: var(--color-bg-secondary);

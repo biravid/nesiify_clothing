@@ -160,14 +160,38 @@
 .product-price-row {
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
   gap: var(--space-sm);
   margin-bottom: var(--space-md);
 }
 
 .product-price {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: var(--weight-bold);
-  color: var(--color-primary-dark);
+  color: var(--color-brand-olive-dark, #4B4E26);
+  letter-spacing: -0.5px;
+}
+
+.product-price-row .product-price-original {
+  font-size: 18px;
+  font-weight: var(--weight-medium);
+  color: var(--color-text-secondary);
+  text-decoration: line-through;
+  text-decoration-color: #9A9B93;
+}
+
+.product-price-row .product-price-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: var(--weight-bold);
+  color: #B33D25;
+  background-color: #FDF2F0;
+  border: 1px solid rgba(179, 61, 37, 0.2);
+  padding: 2px 8px;
+  border-radius: 6px;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
 }
 
 .product-tax-note {

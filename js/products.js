@@ -117,6 +117,21 @@ function renderProductCard(product, basePath = '') {
     ? `<span class="product-card-age">Age ${product.ageRange}</span>`
     : '';
 
+  const currentPrice = Number(product.price) || 0;
+  const originalPrice = Number(product.originalPrice) || 0;
+  const hasDiscount = originalPrice > currentPrice;
+  const discountPercent = hasDiscount ? Math.round(((originalPrice - currentPrice) / originalPrice) * 100) : 0;
+
+  const priceHTML = hasDiscount
+    ? `<div class="product-card-price">
+        <span class="product-price-discounted">${formatPrice(currentPrice)}</span>
+        <span class="product-price-original">${formatPrice(originalPrice)}</span>
+        <span class="product-price-badge">${discountPercent}% OFF</span>
+      </div>`
+    : `<div class="product-card-price">
+        <span class="product-price-discounted">${formatPrice(currentPrice)}</span>
+      </div>`;
+
   return `
     <article class="product-card" data-product-id="${product.id}" data-category="${product.category}">
       <div class="product-card-media">
@@ -133,7 +148,7 @@ function renderProductCard(product, basePath = '') {
         <h3 class="product-card-name">
           <a href="${productUrl}">${product.name}</a>
         </h3>
-        <div class="product-card-price">${formatPrice(product.price)}</div>
+        ${priceHTML}
         <div class="product-card-action">
           <a href="${productUrl}" class="btn btn-secondary" aria-label="View product ${product.name}">VIEW PRODUCT</a>
         </div>

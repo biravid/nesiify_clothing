@@ -185,6 +185,11 @@ function renderProductDetails(p) {
     ? `<ul>${p.details.map(d => `<li>${d}</li>`).join('')}</ul>` 
     : `<p>Crafted with soft, breathable cotton fabrics for everyday play and movement.</p>`;
 
+  const currentPrice = Number(p.price) || 0;
+  const originalPrice = Number(p.originalPrice) || 0;
+  const hasDiscount = originalPrice > currentPrice;
+  const discountPercent = hasDiscount ? Math.round(((originalPrice - currentPrice) / originalPrice) * 100) : 0;
+
   const container = document.getElementById('productDetailContainer');
   container.innerHTML = `
     <div class="product-detail-layout">
@@ -206,7 +211,11 @@ function renderProductDetails(p) {
           ${p.ageRange ? `<div class="product-age-badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:-2px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> Suitable for ages ${p.ageRange}</div>` : ''}
           <h1 class="product-title">${p.name}</h1>
           <div class="product-price-row">
-            <span class="product-price">${formatPrice(p.price)}</span>
+            <span class="product-price product-price-discounted">${formatPrice(currentPrice)}</span>
+            ${hasDiscount ? `
+              <span class="product-price-original">${formatPrice(originalPrice)}</span>
+              <span class="product-price-badge">${discountPercent}% OFF</span>
+            ` : ''}
             <span class="product-tax-note">Inclusive of all taxes</span>
           </div>
         </div>

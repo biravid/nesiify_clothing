@@ -79,6 +79,28 @@ function initHeroCarousel() {
     });
   });
 
+  // 1b. Prev / Next Navigation Arrows Click
+  const prevBtn = carouselEl.querySelector('.hero-carousel-prev');
+  const nextBtn = carouselEl.querySelector('.hero-carousel-next');
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      prevSlide();
+      startAutoSlide();
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      nextSlide();
+      startAutoSlide();
+    });
+  }
+
   // 2. Pause on Hover / Resume on Leave
   carouselEl.addEventListener('mouseenter', stopAutoSlide);
   carouselEl.addEventListener('mouseleave', startAutoSlide);

@@ -208,11 +208,44 @@
 }
 
 .product-card-price {
-  font-size: var(--font-size-base);
-  font-weight: var(--weight-bold);
-  color: var(--color-primary-dark);
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px;
   margin-top: auto;
   margin-bottom: var(--space-sm);
+  line-height: 1.2;
+}
+
+.product-card-price .product-price-discounted,
+.product-price-discounted {
+  font-size: var(--font-size-base);
+  font-weight: var(--weight-bold);
+  color: var(--color-brand-olive-dark, #4B4E26);
+  letter-spacing: -0.2px;
+}
+
+.product-card-price .product-price-original,
+.product-price-original {
+  font-size: 13px;
+  font-weight: var(--weight-regular);
+  color: var(--color-text-secondary);
+  text-decoration: line-through;
+  text-decoration-color: #9A9B93;
+}
+
+.product-card-price .product-price-badge,
+.product-price-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: var(--weight-bold);
+  color: #B33D25;
+  background-color: #FDF2F0;
+  padding: 2px 5px;
+  border-radius: 4px;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
 }
 
 .product-card-action {
