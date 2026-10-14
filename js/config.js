@@ -18,6 +18,7 @@ const SITE_CONFIG = {
   description: "Comfortable everyday clothing for kids aged 2–12.",
   ageRange: "Age 2–12",
   logoUrl: "assets/logo/nesiify_logo.webp",
+  siteUrl: "https://nesiifyclothing.com",
 
   // Primary Categories
   categories: [

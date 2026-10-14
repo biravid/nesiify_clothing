@@ -31,6 +31,25 @@ const WhatsAppService = {
   },
 
   /**
+   * Get direct URL to product page for WhatsApp link
+   * @param {Object} product
+   * @returns {string} Product URL
+   */
+  getProductUrl(product) {
+    if (!product || !product.id) return '';
+    try {
+      if (typeof window !== 'undefined' && window.location && window.location.origin && !window.location.origin.startsWith('file')) {
+        const path = window.location.pathname.replace(/\/[^\/]*$/, '');
+        return `${window.location.origin}${path}/product.html?id=${product.id}`;
+      }
+    } catch (e) {}
+    const domain = (typeof SITE_CONFIG !== 'undefined' && SITE_CONFIG.siteUrl) 
+      ? SITE_CONFIG.siteUrl 
+      : 'https://nesiifyclothing.com';
+    return `${domain}/product.html?id=${product.id}`;
+  },
+
+  /**
    * Generate formatted product order message matching Section 15
    * @param {Object} product 
    * @param {Object} selection { size, color, quantity }
@@ -39,23 +58,27 @@ const WhatsAppService = {
   createOrderMessage(product, selection) {
     const currency = (typeof SITE_CONFIG !== 'undefined' && SITE_CONFIG.currency) ? SITE_CONFIG.currency : '₹';
     const totalPrice = (Number(product.price) || 0) * (Number(selection.quantity) || 1);
+    const productUrl = this.getProductUrl(product);
+
+    // Customer selected age / size for their child (e.g. "3-4Y", "2Y", etc.)
+    const selectedAgeSize = selection.size || 'Standard';
 
     const lines = [
       "Hi! I'm interested in ordering from Nesiify Clothing.",
       "",
       `Product: ${product.name}`,
-      `Product Code: ${product.id}`
+      `Product Code: ${product.id}`,
+      `Selected Age / Size: ${selectedAgeSize}`,
+      `Colour: ${selection.color || 'Standard'}`,
+      `Quantity: ${selection.quantity || 1}`,
+      `Price: ${currency}${totalPrice.toLocaleString('en-IN')}`
     ];
 
-    if (product.ageRange) {
-      lines.push(`Age: ${product.ageRange}`);
+    if (productUrl) {
+      lines.push("", `View Product: ${productUrl}`);
     }
 
     lines.push(
-      `Size: ${selection.size || 'Standard'}`,
-      `Colour: ${selection.color || 'Standard'}`,
-      `Quantity: ${selection.quantity || 1}`,
-      `Price: ${currency}${totalPrice.toLocaleString('en-IN')}`,
       "",
       "Is this available for delivery?"
     );
@@ -156,14 +179,16 @@ const WhatsAppService = {
       const unitPrice = Number(item.price) || 0;
       const subtotal = qty * unitPrice;
       grandTotal += subtotal;
+      const itemUrl = this.getProductUrl(item);
 
       lines.push(`${idx + 1}. ${item.name}`);
       lines.push(`Product Code: ${item.id}`);
-      if (item.size) lines.push(`Size: ${item.size}`);
+      if (item.size) lines.push(`Selected Age / Size: ${item.size}`);
       if (item.color) lines.push(`Colour: ${item.color}`);
       lines.push(`Quantity: ${qty}`);
       lines.push(`Price: ${currency}${unitPrice.toLocaleString('en-IN')} each`);
       lines.push(`Subtotal: ${currency}${subtotal.toLocaleString('en-IN')}`);
+      if (itemUrl) lines.push(`View Product: ${itemUrl}`);
       lines.push("");
     });
 
