@@ -1,7 +1,7 @@
 [
   {
     "id": "NC001",
-    "name": "Pink Cartoon Print T-Shirt",
+    "name": "Pink Cartoon Print Set",
     "price": 299,
     "originalPrice": 450,
     "category": "Sets",
@@ -35,7 +35,7 @@
   },
   {
     "id": "NC002",
-    "name": "Heather Grey Mini Print T-Shirt",
+    "name": "Heather Grey Mini Print Set",
     "price": 299,
     "originalPrice": 450,
     "category": "Sets",
@@ -69,7 +69,7 @@
   },
   {
     "id": "NC003",
-    "name": "Lavender Floral Print T-Shirt",
+    "name": "Lavender Floral Print Set",
     "price": 299,
     "originalPrice": 450,
     "category": "Sets",
@@ -103,7 +103,7 @@
   },
   {
     "id": "NC004",
-    "name": "Light Lavender Tiny Floral T-Shirt",
+    "name": "Light Lavender Tiny Floral Set",
     "price": 299,
     "originalPrice": 450,
     "category": "Sets",
@@ -137,7 +137,7 @@
   },
   {
     "id": "NC005",
-    "name": "Navy Blue White Floral T-Shirt",
+    "name": "Navy Blue White Floral Set",
     "price": 299,
     "originalPrice": 450,
     "category": "Sets",
@@ -171,7 +171,7 @@
   },
   {
     "id": "NC006",
-    "name": "Black White Polka Dot T-Shirt",
+    "name": "Black White Polka Dot Set",
     "price": 299,
     "originalPrice": 450,
     "category": "Sets",
