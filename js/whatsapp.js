@@ -13,9 +13,9 @@ const WhatsAppService = {
    * e.g. "91XXXXXXXXXX" -> "91XXXXXXXXXX"
    */
   getCleanNumber() {
-    const raw = (typeof SITE_CONFIG !== 'undefined' && SITE_CONFIG.whatsappNumber) 
-      ? SITE_CONFIG.whatsappNumber 
-      : "918300947503";
+    const raw = (typeof SITE_CONFIG !== 'undefined' && SITE_CONFIG.whatsappNumber)
+      ? SITE_CONFIG.whatsappNumber
+      : "917200728383";
     return raw.replace(/[^0-9]/g, '');
   },
 
@@ -42,9 +42,9 @@ const WhatsAppService = {
         const path = window.location.pathname.replace(/\/[^\/]*$/, '');
         return `${window.location.origin}${path}/product.html?id=${product.id}`;
       }
-    } catch (e) {}
-    const domain = (typeof SITE_CONFIG !== 'undefined' && SITE_CONFIG.siteUrl) 
-      ? SITE_CONFIG.siteUrl 
+    } catch (e) { }
+    const domain = (typeof SITE_CONFIG !== 'undefined' && SITE_CONFIG.siteUrl)
+      ? SITE_CONFIG.siteUrl
       : 'https://nesiifyclothing.com';
     return `${domain}/product.html?id=${product.id}`;
   },

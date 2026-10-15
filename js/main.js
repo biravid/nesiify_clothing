@@ -74,7 +74,7 @@ function initGlobalWhatsAppTriggers() {
       if (typeof WhatsAppService !== 'undefined') {
         WhatsAppService.openGeneralChat(customMsg);
       } else {
-        const phone = (typeof SITE_CONFIG !== 'undefined') ? SITE_CONFIG.whatsappNumber : "918300947503";
+        const phone = (typeof SITE_CONFIG !== 'undefined') ? SITE_CONFIG.whatsappNumber : "917200728383";
         window.open(`https://wa.me/${phone.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(customMsg)}`, '_blank');
       }
     });

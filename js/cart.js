@@ -58,7 +58,7 @@ const Cart = (() => {
     _customer = { name: name || '', city: city || '' };
     try {
       localStorage.setItem(CUSTOMER_KEY, JSON.stringify(_customer));
-    } catch (e) {}
+    } catch (e) { }
   }
 
   /**
@@ -97,8 +97,8 @@ const Cart = (() => {
     const quantity = Math.max(1, parseInt(selection.quantity, 10) || 1);
     const key = makeItemKey(product.id, size, color);
 
-    const primaryImg = (product.images && product.images[0]) 
-      ? product.images[0] 
+    const primaryImg = (product.images && product.images[0])
+      ? product.images[0]
       : 'assets/products/nc001-1.jpg';
 
     const existingIndex = _items.findIndex(i => i.key === key);
@@ -261,12 +261,12 @@ const Cart = (() => {
     bodyEl.innerHTML = `
       <div class="cart-items-list">
         ${_items.map(item => {
-          const itemTotal = item.price * item.quantity;
-          const basePath = (window.location.pathname.includes('/policies/') || window.location.pathname.includes('/admin/')) ? '../' : '';
-          const imgSrc = `${basePath}${item.image}`;
-          const prodUrl = `${basePath}product.html?id=${encodeURIComponent(item.id)}`;
+      const itemTotal = item.price * item.quantity;
+      const basePath = (window.location.pathname.includes('/policies/') || window.location.pathname.includes('/admin/')) ? '../' : '';
+      const imgSrc = `${basePath}${item.image}`;
+      const prodUrl = `${basePath}product.html?id=${encodeURIComponent(item.id)}`;
 
-          return `
+      return `
             <div class="cart-item" data-key="${item.key}">
               <div class="cart-item-media">
                 <a href="${prodUrl}" onclick="Cart.closeDrawer()">
@@ -300,7 +300,7 @@ const Cart = (() => {
               </div>
             </div>
           `;
-        }).join('')}
+    }).join('')}
       </div>
     `;
 
@@ -347,10 +347,10 @@ const Cart = (() => {
       WhatsAppService.checkoutCartWhatsApp(_items, { name: custName, city: custCity });
     } else {
       // Fallback generator if service not loaded
-      const phone = (typeof SITE_CONFIG !== 'undefined' && SITE_CONFIG.whatsappNumber) 
-        ? SITE_CONFIG.whatsappNumber.replace(/[^0-9]/g, '') 
-        : '918300947503';
-      
+      const phone = (typeof SITE_CONFIG !== 'undefined' && SITE_CONFIG.whatsappNumber)
+        ? SITE_CONFIG.whatsappNumber.replace(/[^0-9]/g, '')
+        : '917200728383';
+
       const curr = (typeof SITE_CONFIG !== 'undefined' && SITE_CONFIG.currency) ? SITE_CONFIG.currency : '₹';
       const lines = [
         "🛍️ *NEW ORDER — NESIIFY CLOTHING*",

@@ -30,7 +30,7 @@ const SITE_CONFIG = {
 
   // Primary WhatsApp Business Contact (Placeholder until real phone is provided)
   // Format: country code + 10-digit number without spaces or symbols (e.g., "919876543210")
-  whatsappNumber: "918300947503",
+  whatsappNumber: "917200728383",
 
   // Social & Web Links
   instagramUrl: "https://instagram.com/nesiify_clothing",
