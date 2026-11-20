@@ -1,5 +1,73 @@
 [
   {
+    "id": "NCCOMBO1",
+    "name": "3 Pcs T-shirt + Pant combo",
+    "price": 849,
+    "originalPrice": 999,
+    "category": "Sets",
+    "ageRange": "2-12 years",
+    "images": [
+      "assets/products/combo1.png"
+    ],
+    "sizes": [
+      "2Y",
+      "3-4Y",
+      "5-6Y",
+      "7-8Y",
+      "9-10Y",
+      "11-12Y"
+    ],
+    "colors": [
+      "Pink",
+      "white",
+      "lavender"
+    ],
+    "description": "A playful pink kids T-shirt featuring colourful cartoon character prints across the fabric. The bright print gives it a fun and cheerful everyday look.",
+    "details": [
+      "Soft comfortable fabric",
+      "Shorts also customized",
+      "All-over colourful cartoon print",
+      "Classic round-neck design",
+      "Suitable for everyday wear"
+    ],
+    "isNew": true,
+    "isSample": false
+  },
+  {
+    "id": "NCCOMBO2",
+    "name": "3 Pcs T-shirt + Pant combo",
+    "price": 849,
+    "originalPrice": 999,
+    "category": "Sets",
+    "ageRange": "2-12 years",
+    "images": [
+      "assets/products/combo2.png"
+    ],
+    "sizes": [
+      "2Y",
+      "3-4Y",
+      "5-6Y",
+      "7-8Y",
+      "9-10Y",
+      "11-12Y"
+    ],
+    "colors": [
+      "Grey",
+      "Black",
+      "Navy blue"
+    ],
+    "description": "The bright print gives it a fun and cheerful everyday look.",
+    "details": [
+      "Soft comfortable fabric",
+      "Shorts can also customized",
+      "All-over colourful cartoon print",
+      "Classic round-neck design",
+      "Suitable for everyday wear"
+    ],
+    "isNew": true,
+    "isSample": false
+  },
+  {
     "id": "NC001",
     "name": "Pink Cartoon Print Set",
     "price": 299,
