@@ -98,7 +98,7 @@
       "Classic round-neck design",
       "Suitable for everyday wear"
     ],
-    "isNew": true,
+    "isNew": false,
     "isSample": false
   },
   {
@@ -132,7 +132,7 @@
       "Classic round-neck design",
       "Simple everyday kidswear style"
     ],
-    "isNew": true,
+    "isNew": false,
     "isSample": false
   },
   {
@@ -166,7 +166,7 @@
       "Classic round-neck design",
       "Suitable for everyday wear"
     ],
-    "isNew": true,
+    "isNew": false,
     "isSample": false
   },
   {
@@ -200,7 +200,7 @@
       "Purple and green floral detailing",
       "Comfortable round-neck style"
     ],
-    "isNew": true,
+    "isNew": false,
     "isSample": false
   },
   {
@@ -234,7 +234,7 @@
       "Classic round-neck design",
       "Easy-to-wear everyday style"
     ],
-    "isNew": true,
+    "isNew": false,
     "isSample": false
   },
   {
@@ -266,6 +266,346 @@
       "Black base colour",
       "All-over white polka dot print",
       "Classic round-neck style",
+      "Suitable for casual everyday wear"
+    ],
+    "isNew": false,
+    "isSample": false
+  },
+  {
+    "id": "NC007",
+    "name": "Pink Bow Pyjama Set",
+    "price": 349,
+    "originalPrice": 500,
+    "category": "Sets",
+    "ageRange": "2-12 years",
+    "images": [
+      "assets/products/NC007-2.webp",
+      "assets/products/NC007-3.webp",
+      "assets/products/NC007-1.webp"
+    ],
+    "sizes": [
+      "2Y",
+      "3-4Y",
+      "5-6Y",
+      "7-8Y",
+      "9-10Y",
+      "11-12Y"
+    ],
+    "colors": [
+      "Pink"
+    ],
+    "description": "A comfortable pink kids pyjama set featuring a charming bow print across the fabric. The gentle pattern gives it a sweet and cozy everyday look.",
+    "details": [
+      "Soft comfortable fabric",
+      "Pink base colour",
+      "All-over bow print",
+      "Relaxed fit for easy movement",
+      "Suitable for everyday lounge and sleepwear"
+    ],
+    "isNew": true,
+    "isSample": false
+  },
+  {
+    "id": "NC008",
+    "name": "Beige Hearts Pyjama Set",
+    "price": 349,
+    "originalPrice": 500,
+    "category": "Sets",
+    "ageRange": "2-12 years",
+    "images": [
+      "assets/products/NC008-2.webp",
+      "assets/products/NC008-3.webp",
+      "assets/products/NC008-1.webp"
+    ],
+    "sizes": [
+      "2Y",
+      "3-4Y",
+      "5-6Y",
+      "7-8Y",
+      "9-10Y",
+      "11-12Y"
+    ],
+    "colors": [
+      "Beige"
+    ],
+    "description": "A gentle beige kids pyjama set featuring an all-over heart print. The neutral tone and delicate pattern create a cozy and stylish everyday look.",
+    "details": [
+      "Soft comfortable fabric",
+      "Beige base colour",
+      "All-over heart print",
+      "Relaxed fit for easy movement",
+      "Suitable for everyday lounge and sleepwear"
+    ],
+    "isNew": true,
+    "isSample": false
+  },
+  {
+    "id": "NC009",
+    "name": "Tiger Print Pyjama Set",
+    "price": 349,
+    "originalPrice": 500,
+    "category": "Sets",
+    "ageRange": "2-12 years",
+    "images": [
+      "assets/products/NC009-2.webp",
+      "assets/products/NC009-3.webp",
+      "assets/products/NC009-1.webp"
+    ],
+    "sizes": [
+      "2Y",
+      "3-4Y",
+      "5-6Y",
+      "7-8Y",
+      "9-10Y",
+      "11-12Y"
+    ],
+    "colors": [
+      "Tiger Print"
+    ],
+    "description": "A playful kids pyjama set featuring a fun tiger print across the fabric. The adventurous pattern gives it a bold and lively everyday look.",
+    "details": [
+      "Soft comfortable fabric",
+      "All-over tiger print",
+      "Comfortable round-neck style",
+      "Relaxed fit for easy movement",
+      "Suitable for everyday lounge and sleepwear"
+    ],
+    "isNew": true,
+    "isSample": false
+  },
+  {
+    "id": "NC010",
+    "name": "Navy White Tiny Floral Pyjama Set",
+    "price": 349,
+    "originalPrice": 500,
+    "category": "Sets",
+    "ageRange": "2-12 years",
+    "images": [
+      "assets/products/NC010-2.webp",
+      "assets/products/NC010-3.webp",
+      "assets/products/NC010-1.webp"
+    ],
+    "sizes": [
+      "2Y",
+      "3-4Y",
+      "5-6Y",
+      "7-8Y",
+      "9-10Y",
+      "11-12Y"
+    ],
+    "colors": [
+      "Navy Blue"
+    ],
+    "description": "A deep navy blue kids pyjama set covered with a delicate tiny white floral print. The neat floral detailing creates a classic and comfortable look.",
+    "details": [
+      "Soft comfortable fabric",
+      "Deep navy blue base colour",
+      "Delicate all-over tiny floral print",
+      "Relaxed fit for easy movement",
+      "Suitable for everyday lounge and sleepwear"
+    ],
+    "isNew": true,
+    "isSample": false
+  },
+  {
+    "id": "NC011",
+    "name": "Gray Stars Shorts Set",
+    "price": 299,
+    "originalPrice": 450,
+    "category": "Sets",
+    "ageRange": "2-12 years",
+    "images": [
+      "assets/products/NC011-2.webp",
+      "assets/products/NC011-3.webp",
+      "assets/products/NC011-1.webp"
+    ],
+    "sizes": [
+      "2Y",
+      "3-4Y",
+      "5-6Y",
+      "7-8Y",
+      "9-10Y",
+      "11-12Y"
+    ],
+    "colors": [
+      "Grey"
+    ],
+    "description": "A relaxed grey kids shorts set featuring an all-over star pattern. The playful celestial print creates a fun and casual everyday look.",
+    "details": [
+      "Soft comfortable fabric",
+      "Grey base colour",
+      "All-over star print",
+      "Comfortable shorts set design",
+      "Suitable for play and casual wear"
+    ],
+    "isNew": true,
+    "isSample": false
+  },
+  {
+    "id": "NC012",
+    "name": "Black Snow Shorts Set",
+    "price": 299,
+    "originalPrice": 450,
+    "category": "Sets",
+    "ageRange": "2-12 years",
+    "images": [
+      "assets/products/NC012-2.webp",
+      "assets/products/NC012-3.webp",
+      "assets/products/NC012-1.webp"
+    ],
+    "sizes": [
+      "2Y",
+      "3-4Y",
+      "5-6Y",
+      "7-8Y",
+      "9-10Y",
+      "11-12Y"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "description": "A stylish black kids shorts set featuring a contrasting snow-inspired pattern. The bold design offers a neat and modern everyday look.",
+    "details": [
+      "Soft comfortable fabric",
+      "Black base colour",
+      "Contrasting snow-inspired print",
+      "Comfortable shorts set design",
+      "Suitable for everyday play and casual wear"
+    ],
+    "isNew": true,
+    "isSample": false
+  },
+  {
+    "id": "NC013",
+    "name": "Lemon Leaf Shorts Set",
+    "price": 299,
+    "originalPrice": 450,
+    "category": "Sets",
+    "ageRange": "2-12 years",
+    "images": [
+      "assets/products/NC013-2.webp",
+      "assets/products/NC013-3.webp",
+      "assets/products/NC013-1.webp"
+    ],
+    "sizes": [
+      "2Y",
+      "3-4Y",
+      "5-6Y",
+      "7-8Y",
+      "9-10Y",
+      "11-12Y"
+    ],
+    "colors": [
+      "Lemon Yellow"
+    ],
+    "description": "A bright lemon yellow kids shorts set featuring fresh green leaf prints. The vibrant botanical pattern gives it a cheerful summertime feel.",
+    "details": [
+      "Soft comfortable fabric",
+      "Lemon yellow base colour",
+      "Fresh green leaf print",
+      "Comfortable shorts set design",
+      "Suitable for warm weather and play"
+    ],
+    "isNew": true,
+    "isSample": false
+  },
+  {
+    "id": "NC014",
+    "name": "Navy Polo Shorts Set",
+    "price": 299,
+    "originalPrice": 450,
+    "category": "Sets",
+    "ageRange": "2-12 years",
+    "images": [
+      "assets/products/NC014-2.webp",
+      "assets/products/NC014-3.webp",
+      "assets/products/NC014-1.webp"
+    ],
+    "sizes": [
+      "2Y",
+      "3-4Y",
+      "5-6Y",
+      "7-8Y",
+      "9-10Y",
+      "11-12Y"
+    ],
+    "colors": [
+      "Navy Blue"
+    ],
+    "description": "A classic navy blue kids shorts set with a polo-inspired design. The smart silhouette delivers a clean and comfortable casual look.",
+    "details": [
+      "Soft comfortable fabric",
+      "Navy blue base colour",
+      "Clean polo-inspired style",
+      "Comfortable shorts set design",
+      "Suitable for everyday outings and play"
+    ],
+    "isNew": true,
+    "isSample": false
+  },
+  {
+    "id": "NC015",
+    "name": "Beige Shorts Set",
+    "price": 299,
+    "originalPrice": 450,
+    "category": "Sets",
+    "ageRange": "2-12 years",
+    "images": [
+      "assets/products/NC015-2.webp",
+      "assets/products/NC015-3.webp",
+      "assets/products/NC015-1.webp"
+    ],
+    "sizes": [
+      "2Y",
+      "3-4Y",
+      "5-6Y",
+      "7-8Y",
+      "9-10Y",
+      "11-12Y"
+    ],
+    "colors": [
+      "Beige"
+    ],
+    "description": "A versatile beige kids shorts set tailored for relaxed everyday comfort. The neutral tone makes it an easy and gentle daily choice.",
+    "details": [
+      "Soft comfortable fabric",
+      "Neutral beige base colour",
+      "Minimal clean aesthetic",
+      "Comfortable shorts set design",
+      "Suitable for daily wear and playtime"
+    ],
+    "isNew": true,
+    "isSample": false
+  },
+  {
+    "id": "NC016",
+    "name": "Pink Bow Shorts Set",
+    "price": 299,
+    "originalPrice": 450,
+    "category": "Sets",
+    "ageRange": "2-12 years",
+    "images": [
+      "assets/products/NC016-2.webp",
+      "assets/products/NC016-3.webp",
+      "assets/products/NC016-1.webp"
+    ],
+    "sizes": [
+      "2Y",
+      "3-4Y",
+      "5-6Y",
+      "7-8Y",
+      "9-10Y",
+      "11-12Y"
+    ],
+    "colors": [
+      "Pink"
+    ],
+    "description": "A playful pink kids shorts set featuring a charming bow print. The sweet pattern and relaxed silhouette make it a cheerful choice for daily wear.",
+    "details": [
+      "Soft comfortable fabric",
+      "Pink base colour",
+      "All-over bow print",
+      "Comfortable shorts set design",
       "Suitable for casual everyday wear"
     ],
     "isNew": true,
